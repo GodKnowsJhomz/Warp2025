@@ -205,23 +205,11 @@ EquipPreview:
             author : Andrei Karas (4144) , Neo-Mind
             desc: Add support for preview button in older style trader cash shops (right click the items to see the button). Needs the switch enabled in server-side too.
 
-CashShopVis:
-    title : CASH SHOP VISIBILITY
-    mutex : true
-    color : darkorange
-    
-    patches:
         - HideCashShop:
             title : Hide Cash Shop icon
             recommend : no
             author : Neo-Mind
             desc : Hide Cash Shop Icon in clients that already show them.
-            
-        - ShowCashShop:
-            title : Show Cash Shop icon
-            recommend : no
-            author : Neo-Mind
-            desc : Restores the Cash Shop Icon in clients that can have them. (Primarily RE clients hide them).
 
 IncrCamAngle:
     title : CAMERA ANGLES

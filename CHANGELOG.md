@@ -30,6 +30,7 @@
 - CustomInventoryExpandingLimit
 - CustomInventoryLimit 
 - AllowAPBarforAllJobs
+- HideCashShop
 
 # 2024-08-07 Changes
 
