@@ -32,6 +32,7 @@
 - AllowAPBarforAllJobs
 - HideCashShop
 - ResizeNpcBox
+- DisableDoram
 
 # 2024-08-07 Changes
 

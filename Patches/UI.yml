@@ -272,6 +272,12 @@ CustomUI:
             author : Skylove
             desc : Hides the Shortcut Item Bar (Open/Close buttons) from the user interface.
 
+        - DisableDoram:
+            title: Disable Doram
+            recommend: no
+            author: Skylove
+            desc: Disables Doram race selection in the character creation window.
+
 CaseInsensitiveSearch:
     title: CASE INSENSITIVE SEARCH
     mutex: false
