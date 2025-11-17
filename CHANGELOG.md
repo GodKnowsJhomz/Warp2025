@@ -31,6 +31,7 @@
 - CustomInventoryLimit 
 - AllowAPBarforAllJobs
 - HideCashShop
+- ResizeNpcBox
 
 # 2024-08-07 Changes
 

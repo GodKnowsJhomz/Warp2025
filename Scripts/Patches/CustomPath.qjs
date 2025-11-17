@@ -470,7 +470,7 @@ CustomPath.Data = MakeMap(
 		strType : "Path",
 		varName : '$newrunesysInfo',
 		prefix : "runesystemInfo Lua",
-		knownName : "System\\Rune\\runesystemInfo.lub"
+		knownName : "System\\Rune\\runesystemInfo"
 	},
 	'CustomRuneRewardLub',
 	{
