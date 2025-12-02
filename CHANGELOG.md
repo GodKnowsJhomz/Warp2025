@@ -33,6 +33,7 @@
 - HideCashShop
 - ResizeNpcBox
 - DisableDoram
+- HideProbabilityUI
 
 # 2024-08-07 Changes
 
