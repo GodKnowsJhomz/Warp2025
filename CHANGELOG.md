@@ -34,6 +34,7 @@
 - ResizeNpcBox
 - DisableDoram
 - HideProbabilityUI
+- FixFontsCharset
 
 # 2024-08-07 Changes
 
