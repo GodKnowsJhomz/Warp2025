@@ -35,6 +35,7 @@
 - DisableDoram
 - HideProbabilityUI
 - FixFontsCharset
+- AllowHomunSkills
 
 # 2024-08-07 Changes
 

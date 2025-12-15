@@ -430,6 +430,11 @@ CustomPath:
             author : Secret
             desc : Change the clientinfo XML file loaded from *clientinfo.xml to user specified name.
 
+        - AllowHomunSkills:
+            title : Unlock all valid skills for homunculus and mercenary AI
+            recommend : no
+            author : 4144
+            desc : Unlock all valid skills for homunculus and mercenary AI.
 
 SharedBodyPal:
     title : SHARED BODY PALETTES
