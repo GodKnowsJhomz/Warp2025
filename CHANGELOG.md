@@ -36,6 +36,7 @@
 - HideProbabilityUI
 - FixFontsCharset
 - AllowHomunSkills
+- EnablePingLog
 
 # 2024-08-07 Changes
 
