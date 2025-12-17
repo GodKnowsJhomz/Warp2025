@@ -62,6 +62,12 @@ CustomSpecials:
             author : Skylove, Singe-Horizontal
             desc : Allows the usage of AP Bar for all Jobs. This patch modifies the internal job check so that every class, regardless of its JobID, is treated as a 4th job and has the AP gauge displayed.
 
+        - RemoveMaxNumbersLimit:
+            title : Remove the limit of max number displayed in damage/heal
+            recommend : no
+            author : 4144
+            desc : Remove the limit of max number displayed in atk/damage/heal/etc
+
 CustomSkills:
     title : SKILL CUSTOMIZATIONS
     mutex : false

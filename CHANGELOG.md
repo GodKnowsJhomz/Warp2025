@@ -37,6 +37,7 @@
 - FixFontsCharset
 - AllowHomunSkills
 - EnablePingLog
+- RemoveMaxNumbersLimit
 
 # 2024-08-07 Changes
 
