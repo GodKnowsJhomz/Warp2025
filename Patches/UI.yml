@@ -284,6 +284,12 @@ CustomUI:
             author : Skylove
             desc: Hides the item probability window, preventing probability details from being displayed in the UI.
 
+        - FixSelectMenuReset:
+            title : Fix NPC dialogue Select Menu Reset
+            recommend : no
+            author : Victor Hugo
+            desc: "Fixes NPC dialogue select menu position reset issue."
+
 CaseInsensitiveSearch:
     title: CASE INSENSITIVE SEARCH
     mutex: false

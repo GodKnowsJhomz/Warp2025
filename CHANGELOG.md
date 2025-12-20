@@ -38,6 +38,7 @@
 - AllowHomunSkills
 - EnablePingLog
 - RemoveMaxNumbersLimit
+- FixSelectMenuReset
 
 # 2024-08-07 Changes
 
