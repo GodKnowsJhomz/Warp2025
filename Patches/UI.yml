@@ -290,6 +290,12 @@ CustomUI:
             author : Victor Hugo
             desc: "Fixes NPC dialogue select menu position reset issue."
 
+        - FixSelectMenuWidthExpansion:
+            title : Fix NPC dialogue Select Menu Width Expansion
+            recommend : no
+            author : Victor Hugo
+            desc: "Prevents the NPC dialogue select menu from expanding too wide when the text contains '^RRGGBB' color tags by correcting the length calculation."
+
 CaseInsensitiveSearch:
     title: CASE INSENSITIVE SEARCH
     mutex: false
