@@ -39,6 +39,7 @@
 - EnablePingLog
 - RemoveMaxNumbersLimit
 - FixSelectMenuReset
+- FixSelectMenuWidthExpansion
 
 # 2024-08-07 Changes
 

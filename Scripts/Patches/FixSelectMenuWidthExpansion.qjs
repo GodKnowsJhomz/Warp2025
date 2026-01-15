@@ -1,0 +1,51 @@
+FixSelectMenuWidthExpansion = function(_)
+{
+	$$(_, 1, `Find pattern (PUSH block + CALL [IAT])`)
+	const pat = "53 FF 75 EC 56 FF 37 FF 15 ?? ?? ?? ??";
+	const basePhy = Exe.FindHex(pat);
+	if (basePhy < 0)
+		throw Error("Pattern not found");
+
+	const retnPhy = basePhy + 7;
+	const retnVir = Exe.Phy2Vir(retnPhy, CODE);
+
+	$$(_, 2, `Build cave code (sanitize + replay pushes + JMP placeholder)`)
+
+	let code =
+		"60" + "9C" + "8B4DEC" + "33C0"
+	+	"3BC1" + "7D2E"
+	+	"66833C465E" + "7524"
+	+	"8BD1" + "2BD0" + "83FA07" + "7C1B"
+	+	"8D3C46" + "56" + "8D770E" + "8BCA" + "83E907" + "F366A5" + "5E"
+	+	"8B4DEC" + "83E907" + "894DEC" + "EBD1"
+	+	"40" + "EBCE"
+	+	"9D" + "61"
+	// replay overwritten 7 bytes
+	+	"53" + "FF75EC" + "56" + "FF37"
+	;
+
+	// placeholder JMP (E9 + rel32(0))
+	const jmpOff = code.byteCount();
+	code += "E9 00 00 00 00";
+
+	$$(_, 3, `Add cave code`)
+	const [cavePhy, caveVir] = Exe.AddHex(code, 0x10);
+
+	$$(_, 4, `Patch rel32 of the placeholder JMP (write to PHYSICAL address)`)
+
+	const srcVir = caveVir + jmpOff;
+
+	const rel = retnVir - (srcVir + 5);
+
+	const rel32hex = (rel >>> 0).toHex(4);
+
+	Exe.SetHex(cavePhy + jmpOff + 1, rel32hex);
+
+	$$(_, 5, `Hook original PUSH block (7 bytes) => JMP cave + NOPs`)
+
+	Exe.SetJMP(basePhy, caveVir, 2);
+
+	return true;
+};
+
+FixSelectMenuWidthExpansion.validate = () => true;
