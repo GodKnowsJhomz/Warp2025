@@ -296,6 +296,12 @@ CustomUI:
             author : Victor Hugo
             desc: "Prevents the NPC dialogue select menu from expanding too wide when the text contains '^RRGGBB' color tags by correcting the length calculation."
 
+        - ChangeGoldPCMaxPoints:
+            title : Change GoldPC Maximum Points Limit
+            recommend : no
+            author : Skylove
+            desc: "Replaces the hard-coded Gold PC point cap of 300 with a user-defined value (up to 99,999). Requires matching server-side change in rAthena (battle.cpp)."
+
 CaseInsensitiveSearch:
     title: CASE INSENSITIVE SEARCH
     mutex: false

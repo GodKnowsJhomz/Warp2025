@@ -40,6 +40,7 @@
 - RemoveMaxNumbersLimit
 - FixSelectMenuReset
 - FixSelectMenuWidthExpansion
+- ChangeGoldPCMaxPoints
 
 # 2024-08-07 Changes
 
