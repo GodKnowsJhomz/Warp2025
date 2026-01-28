@@ -301,6 +301,12 @@ CustomUI:
             author : Victor Hugo
             desc : Fixes an issue where shortcut and skill bars reset after login or map change
 
+        - ChangeGoldPCMaxPoints:
+            title : Change GoldPC Maximum Points Limit
+            recommend : no
+            author : Skylove
+            desc: "Replaces the hard-coded Gold PC point cap of 300 with a user-defined value (up to 99,999). Requires matching server-side change in rAthena (battle.cpp)."
+
 CaseInsensitiveSearch:
     title: CASE INSENSITIVE SEARCH
     mutex: false

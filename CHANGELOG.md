@@ -40,7 +40,9 @@
 - RemoveMaxNumbersLimit
 - FixSelectMenuReset
 - FixSelectMenuWidthExpansion
+- ChangeGoldPCMaxPoints
 - FixSkillbarReset
+
 
 # 2024-08-07 Changes
 
