@@ -295,6 +295,11 @@ CustomUI:
             recommend : no
             author : Victor Hugo
             desc: "Prevents the NPC dialogue select menu from expanding too wide when the text contains '^RRGGBB' color tags by correcting the length calculation."
+        - FixSkillbarReset:
+            title : Fix loading shortcuts / skill bar state
+            recommend : yes
+            author : Victor Hugo
+            desc : Fixes an issue where shortcut and skill bars reset after login or map change
 
 CaseInsensitiveSearch:
     title: CASE INSENSITIVE SEARCH

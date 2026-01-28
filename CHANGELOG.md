@@ -40,6 +40,7 @@
 - RemoveMaxNumbersLimit
 - FixSelectMenuReset
 - FixSelectMenuWidthExpansion
+- FixSkillbarReset
 
 # 2024-08-07 Changes
 
