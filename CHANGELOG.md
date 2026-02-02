@@ -42,6 +42,7 @@
 - FixSelectMenuWidthExpansion
 - ChangeGoldPCMaxPoints
 - FixSkillbarReset
+- AllianceChatHotkeySelector
 
 
 # 2024-08-07 Changes
