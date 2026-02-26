@@ -43,6 +43,10 @@
 - ChangeGoldPCMaxPoints
 - FixSkillbarReset
 - AllianceChatHotkeySelector
+- CustomEncKeys
+- IncreaseLightmapQuality
+- DisableIndoorRSW
+- RemovePremiumService
 
 
 # 2024-08-07 Changes
