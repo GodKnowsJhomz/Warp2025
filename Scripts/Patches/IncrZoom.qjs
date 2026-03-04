@@ -51,6 +51,6 @@ ZoomMax       = IncrZoom;
 IncrZoom.Data = MakeMap(
     'Zoom25Percent', "00 00 00 43 00 00",
     'Zoom50Percent', "00 00 FF 43 00 00",
-    'Zoom75Percent', "00 00 4C 44 00 00",
+	'Zoom75Percent', "00 80 36 44 00 00",
     'ZoomMax',       "00 00 99 44 00 00" 
 );
