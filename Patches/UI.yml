@@ -295,6 +295,13 @@ CustomUI:
             recommend : no
             author : Victor Hugo
             desc: "Prevents the NPC dialogue select menu from expanding too wide when the text contains '^RRGGBB' color tags by correcting the length calculation."
+
+        - FixSelectMenuHeightExpansion:
+            title : Restore Old NPC Select Menu Behavior
+            recommend : no
+            author : Victor Hugo
+            desc: "Restores the old NPC select menu behavior. When the number of options exceeds the visible limit, a scrollbar will appear instead of expanding the dialogue window height."
+
         - FixSkillbarReset:
             title : Fix loading shortcuts / skill bar state
             recommend : yes
@@ -306,6 +313,12 @@ CustomUI:
             recommend : no
             author : Skylove
             desc: "Replaces the hard-coded Gold PC point cap of 300 with a user-defined value (up to 99,999). Requires matching server-side change in rAthena (battle.cpp)."
+
+        - CustomBarterZenySep:
+            title : Format Barter Zeny with Commas
+            recommend : no
+            author : Victor Hugo
+            desc : Adds thousand separators (commas) to the Zeny display in the Barter window for better readability (e.g., 1,000,000 z).
 
 CaseInsensitiveSearch:
     title: CASE INSENSITIVE SEARCH
@@ -455,7 +468,7 @@ IgnoreErrors:
         - IgnoreEntryQueueErr:
             title : Ignore Entry Queue errors
             recommend : no
-            author : X-EcutiOnner
+            author : X-EcutiOnner , Skylove
             desc : Prevents the client from displaying error messages related to Entry Queue. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of the errors.
 
 MessageBox:
