@@ -1,0 +1,2243 @@
+############################################################################
+#                                                                          #
+#   Author(s)     : Gean (https://github.com/geanmm)                       #
+#   Created Date  : 2024-07-25                                             #
+#   Last Modified : 2024-07-27                                             #
+#                                                                          #
+############################################################################
+
+############################################
+# Brazilian Portuguese Translation (PT-br) #
+############################################
+
+#
+#
+##===================================#
+## Text orientation & other settings #
+##===================================#
+#
+RTL: no
+#
+##============================#
+## Tab names for TestBench UI #
+##============================#
+#
+tabs:
+    - 패치
+    - 확장 기능
+    - 테스트
+    - 결과
+
+##========================#
+## File/Dir Dialog titles #
+##========================#
+
+dialogs:
+    dir: 테스트 exe 파일들이 들어 있는 디렉터리를 선택하세요
+    src: 원본 exe 파일을 선택하세요
+    tgt: 대상 exe 파일을 선택하세요
+    loadS: 불러올 세션 파일을 선택하세요
+    saveS: 저장할 세션 파일을 선택하세요
+
+actions:
+
+    #==============#
+    # Patches Page #
+    #==============#
+      
+    getPatches:
+        title:  패치<br>가져오기
+        tooltip: 정의된 모든 패치를 리스트에 채웁니다
+    
+    selVisiblePatches:
+        title: 보이는 것<br>선택
+        tooltip: 현재 보이는 모든 패치를 선택합니다
+    
+    clearSelPatches:
+        title: 선택 항목<br>지우기
+        tooltip: 선택된 모든 패치를 지웁니다
+    
+    #=================#
+    # Extensions Page #
+    #=================#
+    
+    getExtns:
+        title: 확장 기능<br>가져오기
+        tooltip: 정의된 모든 확장 기능을 리스트에 채웁니다
+
+    
+    selVisibleExtns:
+        title: 보이는 것<br>선택
+        tooltip: 현재 보이는 모든 확장 기능을 선택합니다
+    
+    clearSelExtns:
+        title: 선택 항목<br>지우기
+        tooltip: 선택된 모든 확장 기능을 지웁니다
+    
+    #==============#
+    # Testers Page #
+    #==============#
+    
+    getExes: 
+        title: Exe 가져오기
+        tooltip: 테스트 디렉터리에서 발견된 모든 .exe 파일을 리스트에 채웁니다
+    
+    selVisibleExes:
+        title: 보이는 것<br>선택
+        tooltip: 현재 보이는 모든 exe 파일을 선택합니다
+    
+    clearSelExes:
+        title: 선택 항목<br>지우기
+        tooltip: 선택된 모든 exe 파일을 지웁니다
+    
+    #==============#
+    # Results Page #
+    #==============#
+    
+    runTest: 
+        title: 테스트 실행
+        tooltip: 선택된 exe 파일 리스트에서 선택된 패치와 확장 기능을 테스트하고 '결과' 탭에 표시합니다
+    
+    #=======================#
+    # Script Window related #
+    #=======================#
+    
+    showScriptWin:
+        title: 스크립트 창 표시
+        tooltip: 스크립트 테스트를 빠르게 하기 위해 (Alt+W) 스크립트 창을 표시합니다
+    
+#=========================#
+    # Remaining Quick Actions #
+    #=========================#
+    
+    loadSrcExe:
+        title: 파일<br>불러오기
+        tooltip: 원본 exe 파일을 불러옵니다 (스크립트가 아직 불러와지지 않았다면 함께 불러옵니다)
+    
+    applyPatches: 
+        title: 패치<br>적용
+        tooltip: 선택된 패치를 불러온 exe에 적용하고 출력 파일로 저장합니다
+    
+    selectPrev:
+        title: 이전<br>선택
+        tooltip: 마지막에 적용된 모든 패치를 선택합니다
+    
+    selectRcmd:
+        title: 추천<br>선택
+        tooltip: <b>'추천'</b>됨 으로 표시된 모든 패치를 선택합니다
+    
+    loadChangedScripts:
+        title: 스크립트<br>불러오기
+        tooltip: (Alt+C) 마지막 불러오기 이후 수정된 모든 .qjs 스크립트 파일을 'Scripts' 디렉터리 내 'Patches', 'Support', 'Extensions' 하위 폴더에서 불러옵니다
+    
+    clearOutput:
+        title: 지우기
+        tooltip: <b>'출력'</b> 화면을 지웁니다
+    
+    evalScript: 
+        title: 평가
+        tooltip: (Ctrl+R) 에디터의 스크립트를 실행하고 결과를 출력에 표시합니다
+    
+    clearEditor: 
+        title: 지우기
+        tooltip: 스크립트 에디터를 지웁니다
+    
+    #================#
+    # Filter Options #
+    #================#
+    
+    rexBtn:
+        tooltip: 정규 표현식 또는 전체 일치 여부를 선택합니다
+    
+    csBtn:
+        tooltip: 대소문자 구분 여부를 선택합니다 
+    
+    #============#
+    # Menu Items #
+    #============#
+    
+    loadPatchScripts:
+        title: <b>'패치'</b>에서 불러오기
+        tooltip: (Alt+P) 'Scripts/Patchs' 디렉터리의 모든 .qjs 스크립트 파일을 불러옵니다
+    
+    loadExtnScripts:
+        title: <b>'확장 기능'</b>에서 불러오기
+        tooltip: (Alt+E) 'Scripts/Extensions' 디렉터리의 모든 .qjs 스크립트 파일을 불러옵니다
+    
+    loadSuppScripts:
+        title: <b>'지원'</b>에서 불러오기
+        tooltip: (Alt+S) 'Scripts/Support' 디렉터리의 모든 .qjs 스크립트 파일을 불러옵니다
+    
+    loadAllScripts:
+        title: 모든 스크립트<br>불러오기
+        tooltip: (Alt+A) 'Scripts' 디렉터리 내 'Patches', 'Support', 'Extensions' 하위 폴더의 모든 .qjs 스크립트 파일을 불러옵니다
+    
+    loadSession:
+        title: 세션 파일 불러오기
+        tooltip: 지정된 세션 파일에서 모든 패치 선택과 입력을 불러옵니다
+    
+    saveSession:
+        title: 세션 파일 저장
+        tooltip: 모든 패치 선택과 입력을 지정된 세션 파일에 저장합니다
+    
+    refreshLanguages:
+        title: 언어 새로고침
+        tooltip: <b>'Languages'</b> 폴더의 .yml 파일에서 제공된 언어 목록을 불러옵니다
+    
+    refreshStyles:
+        title: 스타일 새로고침
+        tooltip: <b>'Styles'</b> 폴더의 .yml 파일에서 제공된 스타일 목록을 불러옵니다
+    
+    loadExtns:
+        title: 확장 기능 불러오기
+        tooltip: 정의된 모든 확장 기능을 확장 기능 창에 채웁니다
+    
+    pro2Session:
+        title: 프로필을 세션으로 변환
+        tooltip: NEMO 프로필을 WARP에서 사용하는 세션 파일로 변환합니다
+    
+    genSecFile:
+        title: 보안 파일 생성
+        tooltip: 입력 파일(실행 파일일 수도 아닐 수도 있음)의 여러 해시를 포함하는 보안 파일을 생성합니다
+    
+    #=========================#
+    # Settings Dialog related #
+    #=========================#
+    saveResolution:
+        title: 해상도 저장
+        tooltip: 현재 테스트 창의 해상도를 기본값으로 저장합니다
+    
+    keepTestInputs:
+        title: 테스트 입력 유지
+        tooltip: 이후 테스트에서 이전에 저장된 입력을 유지하는 옵션입니다
+    
+    stopAtError:
+        title: 오류 시 중지
+        tooltip: 첫 번째 오류가 발생하면 테스트 실행을 중지하는 옵션입니다
+    
+    saveResolutions:
+        title: 해상도 저장
+        tooltip: 메인 창과 스크립트 창의 현재 해상도를 기본값으로 저장합니다
+    
+    showVersion:
+        title: 불러온 버전 표시
+        tooltip: 불러온 exe의 빌드 버전과 날짜를 표시하도록 설정합니다
+        
+    enableEPI:
+        title: EPI 활성화
+        tooltip: exe 파일과 함께 EPI 파일을 생성 및 불러옵니다. 주의해서 사용하세요.
+    
+    genTgtSecure:
+        title: <destino>.secure.txt 생성
+        tooltip: 대상 exe 파일과 함께 보안 파일(.secure.txt)을 생성하도록 설정합니다
+    
+    genTgtSession:
+        title: "대상 세션 생성"
+        tooltip: 대상 exe 파일과 함께 이후 사용할 세션 파일을 생성하도록 설정합니다
+    
+    keepInputs:
+        title: 세션 입력 유지
+        tooltip: 세션 파일을 불러올 때 입력을 하나씩 묻지 않고 저장된 입력을 유지하는 옵션입니다
+    
+messages:
+    
+    #====================#
+    # Regular Box titles #
+    #====================#
+    
+    success: 정보
+    query: 조회
+    warn: 경고
+    error: 오류
+    
+    #============================#
+    # Script specific Box titles #
+    #============================#
+    
+    errS: 스크립트 오류
+   
+    #===========================#
+    # Patch specific Box titles #
+    #===========================#
+    
+    warnP: "패치 경고 : <b>'%0'</b>"
+    errP: "패치 오류 : <b>'%0'</b>"
+    
+    #===============================#
+    # Extension specific Box titles #
+    #===============================#
+    
+    infoE: "확장 기능 정보 : <b>'%0'</b>"
+    warnE: "확장 기능 경고 : <b>'%0'</b>"
+    errE: "확장 기능 오류 : <b>'%0'</b>"
+    
+    #===============#
+    # Button titles #
+    #===============#
+    
+    btnOK: 확인
+    btnCANC: 취소
+    btnYES: 예
+    btnNO: 아니오
+    btnLOAD: 불러오기
+    btnSAVE: 저장
+    btnSEL: 현재 선택
+    
+    #===============#
+    # Error prompts #
+    #===============#
+    
+    noAccess: "<b>'%0'</b> 접근 불가"
+    noWrite: "<b>'%0'</b> 파일을 쓰기 위해 열 수 없습니다"
+    
+    wrongSig: "<b>'%0'</b> 서명이 잘못되었습니다"
+    wrongPE: "<b>'%0'</b>에서 PE 헤더를 찾을 수 없습니다"
+    need32: "<b>'%0'</b>에는 32비트 exe만 사용할 수 있습니다"
+    
+    yamlErr: "YAML 파일 (%0) 분석 실패 : <b>%1</b>"
+    evalErr: "%1의 %0번째 줄 오류 : <b>%2</b>"
+    grpErr: "<b>'groups'</b>는 배열/시퀀스로 존재해야 합니다"
+    extErr: "확장 기능은 배열/시퀀스로 지정해야 합니다"
+    
+    loadFail: "항목 <b>'%0'</b> 불러오기 실패"
+    callFail: "<b>함수 패치</b>를 호출할 수 없습니다"
+    applyFail: "<b>패치</b>를 적용할 수 없습니다"
+    tgtFail: "<b>대상 Exe</b>를 기록할 수 없습니다"
+    funcFail: "<b>%0 함수</b> 없음 또는 접근 불가"
+    allocFail: "공간 할당 실패"
+    dependFail: "의존성 '<b>%0</b>'을 선택할 수 없습니다"
+    
+#=================#
+    # Warning prompts #
+    #=================#
+    
+    empty: "<b>'%0'</b> 비어 있음"
+    noneLoaded: "불러온 Exe 없음"
+    skipWarn: "일부 <b>%0</b>는 여러 이유로 무시되었습니다 (함수 없음, 구문 오류 등)"
+    retnFalse: "함수가 <b>false</b>를 반환했습니다"
+    noExes: "테스트할 Exe가 선택되지 않았습니다"
+    noPatExts: "테스트할 패치나 확장 기능이 선택되지 않았습니다"
+    setNoSave: "설정 <b>'%0'</b>을 저장할 수 없습니다"
+    
+    #=================#
+    # Success prompts #
+    #=================#
+    
+    ready: "<b>'%0'</b> 성공적으로 불러옴"
+    tgtReady: "패치가 <b>대상 Exe</b>에 기록되었습니다"
+    patSuccess: "패치 성공"
+    extnSuccess: "확장 기능 성공"
+    
+    #==============#
+    # Info prompts #
+    #==============#
+    
+    patInfo: "패치 테스트 중 : <b>%0</b>"
+    exeInfo: "<b>'%0'</b> 작업 중\n"
+    extnInfo: "확장 기능 테스트 중 : <b>%0</b>"
+    extnOutput: "<b>결과 => %0</b>"
+    patIgnored: "이 빌드 날짜에 대해 패치가 무시되었습니다"
+    userInterrupt: "<b>사용자가 테스트를 중단했습니다</b>"
+    
+    #===============#
+    # Query prompts #
+    #===============#
+    srcQuery: "대상 Exe 경로를 업데이트하시겠습니까?"
+
+texts:
+    
+    #================#
+    # Header Prompts #
+    #================#
+    
+    selCount: "선택된 패치"
+    extnSelCount: "선택된 확장 기능"
+    exeSelCount: "선택된 Exe"
+    loadDate: "Exe 날짜"
+    loadVersion: "& 버전"
+    
+    #===========================================#
+    # StringField titles (appears on the frame) #
+    #===========================================#
+    
+    srcEntry: 원본
+    tgtEntry: 대상
+    dirEntry: 테스트 디렉터리
+    
+    #===============================#
+    # StringField placeholder texts #
+    #===============================#
+    
+    exePath: Exe 디렉터리
+    filter: 필터 표현식
+    path: 경로
+    find: 검색 표현식
+    
+    #==============#
+    # Frame titles #
+    #==============#
+    
+    actionFrame: 빠른 작업
+    patchFrame: 패치 목록
+    extnFrame: 확장 기능 목록
+    exeFrame: Exe 목록
+    fontFrame: 글꼴 이름
+    demoFrame: 데모
+    choiceFrame: 선택
+    
+    #====================#
+    # Text Editor titles #
+    #====================#
+    
+    scriptEditor: 스크립트 편집기
+    outputView: 출력
+    
+    #======================#
+    # Context Menu prompts #
+    #======================#
+    
+    cutPrompt: 잘라내기
+    copyPrompt: 복사
+    pastePrompt: 붙여넣기
+    delPrompt: 삭제
+    clrPrompt: 지우기
+    undoPrompt: 실행 취소
+    redoPrompt: 다시 실행
+    deselPrompt: 선택 해제
+    selAllPrompt: 모두 선택
+    
+    #===============#
+    # Other prompts #
+    #===============#
+    
+    fontSizePrompt: "글꼴 크기 :"
+    fontNamePrompt: "글꼴 이름 :"
+    langPrompt: "언어 :"
+    stylePrompt: "스타일 :"
+
+##===========================================================#
+## All translations (including UI, Patches, Extensions etc.) #
+##===========================================================#
+
+translations:
+
+    #========================#
+    #             UI         #
+    #========================#
+    - find: Settings
+      replace: 설정
+    
+    - find: Title
+      replace: 제목
+    
+    - find: Group
+      replace: 그룹
+    
+    - find: Author
+      replace: 작성자
+    
+    - find: Description
+      replace: 설명
+      
+    - find: Selected
+      replace: 선택됨
+    
+    - find: Tooltip
+      replace: 툴팁
+    
+    - find: FileName
+      replace: 파일 이름
+    
+    - find: Inbuilt
+      replace: 내장됨
+    
+    - find: From Scripts
+      replace: 스크립트에서
+    
+    - find: Refresh
+      replace: 새로고침
+    
+    - find: Session
+      replace: 세션
+    
+    - find: Find
+      replace: 찾기
+    
+    - find: Sort
+      replace: 정렬 기준
+    
+    - find: by
+      replace: 기준
+    
+    - find: None
+      replace: 없음
+
+    - find: Options
+      replace: 옵션
+
+    - find: Actions
+      replace: 작업
+
+    - find: Enter the target file path
+      replace: 대상 파일 경로 입력
+
+    - find: Target File
+      replace: 대상 파일
+
+  #==================================#
+  #             PATCHES              #
+  #==================================#
+
+  # SOUND
+    - find : SOUND CUSTOMIZATION
+      replace : 사운드 커스터마이징
+
+    - find : Enable 44.1 kHz audio sampling frequency
+      replace : 44.1 kHz 오디오 샘플링 주파수 활성화
+
+    - find : Boosts the audio sampling frequency to 44.1 kHz, improving the audio quality in the game.
+      replace : 오디오 샘플링 주파수를 44.1 kHz로 높여 게임 내 오디오 품질을 향상시킵니다.
+
+    - find : Auto mute audio [Experimental]
+      replace : 자동 음소거 [실험적]
+
+    - find : Auto mute audio when game window is not active.
+      replace : 게임 창이 활성화되지 않았을 때 자동으로 오디오를 음소거합니다.
+   
+    - find : Disable BGM audio
+      replace : BGM 오디오 비활성화
+
+    - find : Disable the use of mp3NameTable.txt to pick & play audio files as BGM.
+      replace : mp3NameTable.txt를 사용하여 오디오 파일을 BGM으로 선택 및 재생하는 기능을 비활성화합니다.
+
+    - find : Restore songs effect
+      replace : 노래 효과 복원
+
+    - find : Restore ground effects of Bard/Dancer songs on latest clients.
+      replace : 최신 클라이언트에서 음유시인/무희 노래의 바닥 효과를 복원합니다.
+
+  # WINDOW
+    # [Basic Button Visibility]
+    - find : BASIC BUTTON VISIBILITY
+      replace : 기본 버튼 표시
+
+    - find : Hide Buttons (Old UI)
+      replace : 버튼 숨기기 (구 UI)
+
+    - find : Hide Buttons (New UI)
+      replace : 버튼 숨기기 (신 UI)
+
+    - find : Hide the various buttons in the Basic Info Window under the HP/SP Bars.
+      replace : HP/SP 바 아래 기본 정보 창의 다양한 버튼을 숨깁니다.
+
+    - find : Show Buttons (New UI)
+      replace : 버튼 표시 (신 UI)
+
+    - find : Shows some of the various hidden buttons in the Basic Info Window under the HP/SP Bars.
+      replace : HP/SP 바 아래 기본 정보 창의 숨겨진 버튼 일부를 표시합니다.
+    
+    # [Char creation]
+    - find : CHARACTER CREATION
+      replace : 캐릭터 생성
+
+    - find : Customize new Char Name field height
+      replace : 캐릭터 이름 입력란 높이 사용자 지정
+
+    - find : Changes the height in input field of the new char creation dialog to user specified value.
+      replace : 새 캐릭터 생성 대화 상자의 입력란 높이를 사용자가 지정한 값으로 변경합니다.
+
+    - find : Increase char create Hair limits
+      replace : 캐릭터 생성 시 헤어 제한 증가
+
+    - find : Increase the Hair Style and Color limits used in Make Character Window to user specified values.
+      replace : 캐릭터 생성 창에서 사용되는 헤어 스타일과 색상 제한을 사용자가 지정한 값으로 증가시킵니다.
+
+    - find : Customize job id in char create dialog
+      replace : 캐릭터 생성 대화 상자에서 직업 ID 사용자 지정
+
+    - find : Override selected job id in character creation packet with user specified value.
+      replace : 캐릭터 생성 패킷의 선택된 직업 ID를 사용자가 지정한 값으로 덮어씁니다.
+
+    - find : Fix latest new char window
+      replace : 최신 캐릭터 생성 창 수정
+
+    - find : Fix the latest new character window (removes the misaligned background and centers the actual window)
+      replace: 최신 캐릭터 생성 창 수정 (잘못 정렬된 배경을 제거하고 창을 중앙에 배치)
+
+    # [Char creation (DORAM)]
+    - find : CHARACTER CREATION (DORAM)
+      replace : 캐릭터 생성 (도람)
+
+    - find : Customize second job id in char create dialog
+      replace : 캐릭터 생성 대화 상자에서 2차 직업 ID 사용자 지정
+
+    - find : Change doram to user specified job id in character creation window.
+      replace : 캐릭터 생성 창에서 도람을 사용자가 지정한 직업 ID로 변경합니다.
+        
+    - find : Disable Doram character creation UI [Experimental]
+      replace : 도람 캐릭터 생성 UI 비활성화 [실험적]
+
+    - find : Disable Doram race in the character creation UI. Server-side disabling is also recommended.
+      replace : 캐릭터 생성 UI에서 도람 종족을 비활성화합니다. 서버 측 비활성화도 권장됩니다.
+    
+    # [FRIEND / PARTY]
+    - find : FRIEND/PARTY WINDOW CUSTOMIZATION
+      replace: 친구/파티 창 커스터마이징
+
+    - find : Customize max friends
+      replace : 최대 친구 수 사용자 지정
+
+    - find : Change the maximum no of friends displayed on Alt+H to user specified value
+      replace : Alt+H에 표시되는 최대 친구 수를 사용자가 지정한 값으로 변경합니다.
+
+    - find : Customize party limit
+      replace : 파티 인원 제한 사용자 지정
+
+    - find : Change the maximum no of party members displayed on Alt+Z to user specified value.
+      replace : Alt+Z에 표시되는 최대 파티 인원 수를 사용자가 지정한 값으로 변경합니다.
+
+    - find : Remove Adventurer Agency from Party
+      replace : 파티에서 모험가 에이전시 제거
+
+    - find : Remove the Adventurer Agency button from the party window.
+      replace : 파티 창에서 모험가 에이전시 버튼을 제거합니다.
+    
+  # [EQUIP WINDOW]
+    - find : EQUIP WINDOW CUSTOMIZATION
+      replace : 장비 창 사용자 지정
+
+    - find : Remove Eq Swap button
+      replace : 장비 교체 버튼 제거
+
+    - find : Remove equipment swap button on the equipment window.
+      replace : 장비 창에서 장비 교체 버튼을 제거합니다.
+
+    - find : Remove Eq Window title
+      replace : 장비 창 제목 제거
+
+    - find : Remove equipment UI title on the equipment window.
+      replace : 장비 창에서 장비 UI 제목을 제거합니다.
+
+  # [EXP BAR]
+    - find : EXP BAR CUSTOMIZATION
+      replace : 경험치 바 사용자 지정
+
+    - find : Customize Experience bar limits
+      replace : 경험치 바 제한 사용자 지정
+
+    - find : Allows client to use custom limits for Base and Job experience bars as per user specified input file.
+      replace : 클라이언트가 사용자 지정 입력 파일에 따라 Base 및 Job 경험치 바의 제한을 사용자 지정할 수 있습니다.
+
+    - find : Show Experience numbers
+      replace : 경험치 수치 표시
+
+    - find : Show Base and Job Experience numbers on top of the respective exp bars in Basic Info Window.
+      replace : 기본 정보 창의 각 경험치 바 위에 Base 및 Job 경험치 수치를 표시합니다.
+
+  # [LOGIN]
+    - find : RETURN TO LOGIN
+      replace : 로그인으로 돌아가기
+
+    - find : Disconnect to Login Window
+      replace : 로그인 창으로 연결 해제
+
+    - find : Make the client return to Login Window upon disconnection.
+      replace : 연결이 끊어지면 클라이언트가 로그인 창으로 돌아가도록 합니다.
+
+    - find : Cancel to Login Window
+      replace : 로그인 창으로 취소
+
+    - find : Makes the Cancel button in Character selection window return to login window instead of Quitting.
+      replace : 캐릭터 선택 창의 취소 버튼이 종료 대신 로그인 창으로 돌아가도록 합니다.
+
+  #
+    - find : SHOW BUTTON
+      replace : 버튼 표시
+
+    - find : Always show Replay button in Service Select
+      replace : 서비스 선택에서 항상 리플레이 버튼 표시
+
+    - find : Makes the client show Replay button on Service Select screen that opens the Replay File List window.
+      replace : 클라이언트가 서비스 선택 화면에 리플레이 버튼을 표시하여 리플레이 파일 목록 창을 열도록 합니다.
+
+    - find : Always show Cancel button in Login
+      replace : 로그인에서 항상 취소 버튼 표시
+
+    - find : Restores the Cancel button in Login Window for switching back to Service Select Window. The button will be placed in between Login and Exit buttons.
+      replace : 로그인 창에서 서비스 선택 창으로 돌아가는 취소 버튼을 복원합니다. 버튼은 로그인과 종료 버튼 사이에 배치됩니다.
+
+    - find : Always show Register button in Login
+      replace : 로그인에서 항상 등록 버튼 표시
+
+    - find : Makes the client always show register button on Login Window for all Langtypes. Clicking the button will open <registrationweb> from clientinfo and closes the client.
+      replace : 클라이언트가 모든 Langtype에서 로그인 창에 등록 버튼을 항상 표시하도록 합니다. 버튼을 클릭하면 clientinfo의 <registrationweb>이 열리고 클라이언트가 종료됩니다.
+
+    - find : 4/6 LETTER LIMIT REMOVAL
+      replace : 4/6 글자 제한 제거
+
+    - find : Remove 4/6 letter Character Name limit
+      replace : 캐릭터 이름 4/6 글자 제한 제거
+
+    - find : Will allow people to use character names shorter than 4 letters.
+      replace : 4글자보다 짧은 캐릭터 이름을 사용할 수 있습니다.
+
+    - find : Remove 4/6 letter User Name limit
+      replace : 사용자 이름 4/6 글자 제한 제거
+
+    - find : Will allow people to use account names shorter than 4 letters.
+      replace : 4글자보다 짧은 계정 이름을 사용할 수 있습니다.
+
+    - find : Remove 4/6 letter Password limit
+      replace : 비밀번호 4/6 글자 제한 제거
+
+    - find : Will allow people to use passwords shorter than 4 letters.
+      replace : 4글자보다 짧은 비밀번호를 사용할 수 있습니다.
+
+    - find : LICENSE SCREEN VISIBILITY
+      replace : 라이선스 화면 표시 여부
+
+    - find : Always hide License Screen
+      replace : 라이선스 화면 항상 숨기기
+
+    - find : Make the client skip the license screen and go directly to the Service Select screen.
+      replace : 클라이언트가 라이선스 화면을 건너뛰고 서비스 선택 화면으로 바로 가도록 합니다.
+
+    - find : Always show License Screen
+      replace : 라이선스 화면 항상 표시
+
+    - find : Makes the client always show the license for all langtypes.
+      replace : 클라이언트가 모든 Langtype에 대해 라이선스를 항상 표시하도록 합니다.
+
+    - find : TRAIT STATUS BUTTON BEHAVIOR
+      replace : 특성 상태 버튼 동작
+
+    - find : Disable Trait Status Button
+      replace : 특성 상태 버튼 비활성화
+
+    - find : Make the Trait Status button do nothing.
+      replace : 특성 상태 버튼이 아무 동작도 하지 않도록 합니다.
+
+    - find : Hide Trait Status Button
+      replace : 특성 상태 버튼 숨기기
+
+    - find : Hide the Trait Status Expansion Button in the Status Window.
+      replace : 상태 창에서 특성 상태 확장 버튼을 숨깁니다.
+
+  # UI
+    - find : UI CUSTOMIZATION
+      replace : 인터페이스 사용자 지정
+
+    - find : Allow shortcuts in WINE [Experimental]
+      replace : WINE에서 단축키 허용 [실험적]
+
+    - find : Allows usage of keyboard shortcuts in wine. Still experimental, so it may or may not work at this time.
+      replace : wine에서 키보드 단축키 사용을 허용합니다. 아직 실험적이므로 현재 작동할 수도 있고 안 될 수도 있습니다.
+
+    - find : Customize missing launcher message
+      replace : 런처 누락 메시지 사용자 지정
+
+    - find : Allows changing the blank message to user specified string when the client runs without a launcher.
+      replace : 클라이언트가 런처 없이 실행될 때 빈 메시지를 사용자가 지정한 문자열로 변경할 수 있습니다.
+
+    - find : Use Tilde for Matk
+      replace : Matk에 물결표(~) 사용
+
+    - find : Make the client use tilde <b>(~)</b> symbol for Matk in Stats Window instead of Plus <b>(+)</b>.
+      replace : 클라이언트가 상태 창에서 Matk에 대해 플러스 <b>(+)</b> 대신 물결표 <b>(~)</b>를 사용하도록 합니다.
+
+    - find : Disable Swear Filter
+      replace : 욕설 필터 비활성화
+
+    - find : Will allow people to chat using swear words ignoring the contents of <b>manner.txt</b>.
+      replace : 사람들이 <b>manner.txt</b> 내용을 무시하고 욕설을 사용하여 채팅할 수 있도록 허용합니다.
+
+    - find : Skip service selection screen
+      replace : 서비스 선택 화면 건너뛰기
+
+    - find : Jumps directly to the login interface without asking to select a service.
+      replace : 서비스 선택을 묻지 않고 로그인 화면으로 바로 이동합니다.
+
+    - find : Use 'Opening' for service selection
+      replace : 서비스 선택에 '열기' 사용
+
+    - find : Enables the 'Opening' button in the new login screen to open the service selection screen again.
+      replace : 새 로그인 화면에서 '열기' 버튼을 활성화하여 서비스 선택 화면을 다시 열 수 있습니다.
+
+    - find : Use normal guild brackets
+      replace : 일반 길드 괄호 사용
+
+    - find : On Langtype 0, instead of square-brackets, japanese style brackets are used, this option reverts that behaviour to the normal square brackets i.e. '[ ]'.
+      replace : Langtype 0에서는 대괄호 대신 일본식 괄호가 사용되며, 이 옵션은 해당 동작을 일반 대괄호 '[ ]'로 되돌립니다.
+
+    - find : '@ Bug fix'
+      replace : '@ 버그 수정'
+
+    - find : Fixes the bug which prevents writing @ in chat window.
+      replace : 채팅 창에서 '@'를 입력할 수 없게 하는 버그를 수정합니다.
+
+    - find : Use official login BG
+      replace : 공식 로그인 배경 사용
+
+    - find : Use Official login background for all Langtypes.
+      replace : 모든 Langtype에서 공식 로그인 배경을 사용합니다.
+
+    - find : Remove Hourly announcement
+      replace : 매시간 알림 제거
+
+    - find : Remove hourly game grade and hourly play time minder announcements.
+      replace : 매시간 게임 등급 및 플레이 시간 알림을 제거합니다.
+
+    - find : Enable flag emoticons
+      replace : 국기 이모티콘 활성화
+
+    - find : Enable Selected Flag Emoticons for all Langtypes. You need to specify a txt file as input with the flag constants assigned to 1-9.
+      replace : 모든 Langtype에서 선택된 국기 이모티콘을 활성화합니다. 1~9에 할당된 국기 상수를 포함한 txt 파일을 입력으로 지정해야 합니다.
+
+    - find : Remove serial display
+      replace : 시리얼 번호 표시 제거
+
+    - find : Removes the display of the client serial number in the login window (bottom right corner).
+      replace : 로그인 창(오른쪽 하단)에서 클라이언트 시리얼 번호 표시를 제거합니다.
+
+    - find : Allow blank space in guild name
+      replace : 길드 이름에 공백 허용
+
+    - find : Allow player to create a guild with space in the name (<b>/guild "Spaced Name"</b>).
+      replace : 플레이어가 이름에 공백이 있는 길드를 생성할 수 있도록 허용 (<b>/guild "공백 포함 이름"</b>).
+
+    - find : Custom inventory limit
+      replace : 인벤토리 제한 사용자 지정
+
+    - find : Change the Maximum no of items displayed in inventory to user specified value (Need to be changed server-side as well).
+      replace : 인벤토리에 표시되는 최대 아이템 수를 사용자가 지정한 값으로 변경합니다 (서버 측에서도 변경 필요).
+
+    - find : Always use email for Char Deletion
+      replace : 캐릭터 삭제 시 항상 이메일 사용
+
+    - find : Makes the Client use email as deletion password for all Langtypes.
+      replace : 클라이언트가 모든 Langtype에서 삭제 비밀번호로 이메일을 사용하도록 합니다.
+
+    - find : Customize vending limit
+      replace : 상점 판매 제한 사용자 지정
+
+    - find : Change the Vending Limit of 1 Billion zeny to user specified value.
+      replace : 상점 판매 제한 10억 제니를 사용자가 지정한 값으로 변경합니다.
+
+    - find : No Help Message on Login
+      replace : 로그인 시 도움말 메시지 없음
+
+    - find : Prevents the Help Message being shown on Login for all Langtypes.
+      replace : 모든 Langtype에서 로그인 시 도움말 메시지가 표시되지 않도록 합니다.
+
+    - find : Hide World View Interface
+      replace : 월드 뷰 인터페이스 숨기기
+
+    - find : Hide the World View (Full Map) Interface that is usually shown at the top right.
+      replace : 일반적으로 오른쪽 상단에 표시되는 월드 뷰(전체 지도) 인터페이스를 숨깁니다.
+
+    - find : Close cutin on Esc key
+      replace : Esc 키로 컷인 닫기
+
+    - find : Allow closing of cutin window by pressing ESC key.
+      replace : ESC 키를 눌러 컷인 창을 닫을 수 있도록 허용합니다.
+
+    - find : Enable Mail Box access for All Langtypes
+      replace : 모든 Langtype에서 메일박스 접근 활성화
+
+    - find : Enables the full use of Mail Boxes and @mail commands (write is disabled for few Langtypes by default in 2013 Clients).
+      replace : 메일박스와 @mail 명령어의 전체 사용을 허용합니다 (2013 클라이언트에서는 일부 Langtype에서 쓰기 기능이 기본적으로 비활성화됨).
+
+    - find : Enable "Notice" email section
+      replace : <b>"공지"</b> 이메일 섹션 활성화
+
+    - find : Enables the use of the "Notice' section in the new Mail Window for RE clients. This will allow for Admins to send specific e-mails (like bulletins) to users.
+      replace : <b>RE 클라이언트</b>의 새 메일 창에서 "공지" 섹션을 사용할 수 있도록 합니다. 이를 통해 관리자가 사용자에게 특정 이메일을 보낼 수 있습니다.
+
+    - find : Move Item Count Upwards
+      replace : 아이템 개수 위로 이동
+
+    - find : Move Item Count upwards in Shortcut Window so as to align with Skill Level display.
+      replace : 단축창에서 아이템 개수를 위로 이동하여 스킬 레벨 표시와 맞춥니다.
+
+    - find : Increase Digit Display
+      replace : 숫자 표시 증가
+
+    - find : Increases the limit of digits displayed while attacking from 6 to 10.
+      replace : 공격 시 표시되는 숫자 제한을 6자리에서 10자리로 늘립니다.
+
+    - find : Customize fade in/out delay
+      replace : 페이드 인/아웃 지연 사용자 지정
+
+    - find : Change fade in/out time in warps on same map.
+      replace : 동일 맵 내 워프 시 페이드 인/아웃 시간을 변경합니다.
+
+    - find : Remove Jobs from Booking Window
+      replace : 예약 창에서 직업 제거
+
+    - find : Removes user specified set of Job Names from Party Booking Window.
+      replace : 파티 예약 창에서 사용자가 지정한 직업 이름 집합을 제거합니다.
+
+    - find : Change Deletion time to relative 
+      replace : 삭제 시간을 상대적으로 변경
+
+    - find :  Change character display deletion time from actual date & time to remaining time.
+      replace : 캐릭터 삭제 표시 시간을 실제 날짜 및 시간에서 남은 시간으로 변경합니다.
+
+    - find : Restore chat focus
+      replace : 채팅 포커스 복원
+
+    - find : Restore input focus from left mouse click. 
+      replace : 마우스 왼쪽 클릭으로 입력 포커스를 복원합니다.
+
+    - find : Fix item description bug
+      replace : 아이템 설명 버그 수정
+
+    - find : Fix item description '[' bug
+      replace : 아이템 설명 '[' 버그 수정
+
+    - find : Disable equipment preview
+      replace : 장비 미리보기 비활성화
+
+    - find : Remove equipment preview button on the items description window
+      replace : 아이템 설명 창에서 장비 미리보기 버튼 제거
+
+    - find : Hide Zero Date in Guild Window
+      replace : 길드 창에서 0 날짜 숨기기
+
+    - find : Hide Zero Date (1969-01-01) in guild members window.
+      replace : 길드 멤버 창에서 0 날짜(1969-01-01) 숨기기
+
+    - find : Customize skill slot highlight
+      replace : 스킬 슬롯 하이라이트 사용자 지정
+
+    - find : Allow all items in Shortcut
+      replace : 모든 아이템 단축창에 허용
+
+    - find : Allow players to put all type of items on the shortcut window (makes it easy to trace).
+      replace : 플레이어가 모든 유형의 아이템을 단축창에 넣을 수 있도록 허용합니다 (추적이 쉬워짐).
+
+    - find : Fix Achievement counters
+      replace : 업적 카운터 수정
+
+    - find : Fix achievement counters for each type of achievement
+      replace : 각 업적 유형에 대한 카운터 수정
+
+    - find : Hide in-game windows
+      replace : 게임 내 창 숨기기
+
+    - find : Allows user to hide specific in-game windows. User needs to provide a YAML file containing the list of Window IDs to be hidden.
+      replace : 사용자가 특정 게임 내 창을 숨길 수 있도록 허용합니다. 숨길 창 ID 목록이 포함된 YAML 파일을 제공해야 합니다.
+
+    - find : Fix homunculus attack AI
+      replace : 호문쿨루스 공격 AI 수정
+
+    - find : Fix issue in homunculus AI which prevents automatic attacks (present in clients 20170920 clients and newer).
+      replace : 호문쿨루스 AI에서 자동 공격이 되지 않는 문제를 수정합니다 (20170920 이후 클라이언트에 존재).
+
+    - find : CASE INSENSITIVE SEARCH
+      replace : 대소문자 구분 없는 검색
+
+    - find : Case-Insensitive storage search
+      replace : 대소문자 구분 없는 창고 검색
+
+    - find : Make the search in Storage Window, case-insensitive.
+      replace : 창고 창에서 대소문자 구분 없이 검색하도록 합니다.
+
+    - find : Case-Insensitive cash shop search
+      replace : 대소문자 구분 없는 캐시 상점 검색
+
+    - find : Make the search in Cash Shop Window, case-insensitive.
+      replace : 캐시 상점 창에서 대소문자 구분 없이 검색하도록 합니다.
+
+    - find : LOGIN BACKGROUND
+      replace : 로그인 배경
+
+    - find : Use only first login BG
+      replace : 첫 번째 로그인 배경만 사용
+
+    - find : Always display only the first login background.
+      replace : 항상 첫 번째 로그인 배경만 표시합니다.
+
+    - find : Use only second login BG
+      replace : 두 번째 로그인 배경만 사용
+
+    - find : Always display only the second login background.
+      replace : 항상 두 번째 로그인 배경만 표시합니다.
+
+    - find : GRAVITY IMAGE REMOVAL
+      replace : 그라비티 이미지 제거
+
+    - find : Remove gravity ads
+      replace : 그라비티 광고 제거
+
+    - find : Avoids displaying Gravity ads on the login background.
+      replace : 로그인 배경에서 그라비티 광고 표시를 방지합니다.
+
+    - find : Remove gravity logo
+      replace : 그라비티 로고 제거
+
+    - find : Avoids displaying Gravity logo on the login background.
+      replace : 로그인 배경에서 그라비티 로고 표시를 방지합니다.
+
+    - find : FONT CUSTOMIZATION
+      replace : 글꼴 사용자 지정
+
+    - find : Customize Font name
+      replace : 글꼴 이름 사용자 지정
+
+    - find : Makes the client use the user specified font for all Langtypes. The Langtype specific charset is still being enforced, so if the selected font does not support it, the system falls back to a font that does.
+      replace : 클라이언트가 모든 Langtype에서 사용자가 지정한 글꼴을 사용하도록 합니다. Langtype별 문자 집합은 여전히 적용되므로 선택한 글꼴이 지원하지 않으면 시스템이 지원하는 글꼴로 대체됩니다.
+
+    - find : Customize Font height (Character)
+      replace : 글꼴 높이 사용자 지정 (문자 기준)
+
+    - find : Changes the height of all fonts used to the user specified value (expressed as character height).
+      replace : 사용자가 지정한 값(문자 높이 기준)으로 모든 글꼴의 높이를 변경합니다.
+
+    - find : Customize Font Height (Cell)
+      replace : 글꼴 높이 사용자 지정 (셀 기준)
+
+    - find : Changes the height of all fonts used to the user specified value (expressed as cell height).
+      replace : 사용자가 지정한 값(셀 높이 기준)으로 모든 글꼴의 높이를 변경합니다.
+
+    - find : Customize Font Height (Offset)
+      replace : 글꼴 높이 사용자 지정 (오프셋 기준)
+
+    - find : Adds the user specified value to all the font heights used.
+      replace : 사용자가 지정한 값을 모든 글꼴 높이에 더합니다.
+
+    - find : Enable Font Height Limits
+      replace : 글꼴 높이 제한 활성화
+
+    - find : Restricts the font heights used to user specified values.
+      replace : 사용자가 지정한 값으로 글꼴 높이를 제한합니다.
+
+    - find : Customize Font Weight (All)
+      replace : 글꼴 두께 사용자 지정 (전체)
+
+    - find : Changes the weight value (boldness) of all fonts used to the user specified value.
+      replace : 모든 글꼴의 두께(굵기)를 사용자가 지정한 값으로 변경합니다.
+
+    - find : Customize Font Weight (Normal)
+      replace : 글꼴 두께 사용자 지정 (보통)
+
+    - find : Changes the weight value (boldness) of all normal fonts used to the user specified value.
+      replace : 모든 보통 글꼴의 두께(굵기)를 사용자가 지정한 값으로 변경합니다.
+
+    - find : Customize Font Weight (Bold)
+      replace : 글꼴 두께 사용자 지정 (굵게)
+
+    - find : Changes the weight value (boldness) of all Bold fonts used to the user specified value.
+      replace : 모든 굵은 글꼴의 두께(굵기)를 사용자가 지정한 값으로 변경합니다.
+
+    - find : Customize Font Weight (Offset)
+      replace : 글꼴 두께 사용자 지정 (오프셋)
+
+    - find : Adds the user specified value to all the weights used.
+      replace : 사용자가 지정한 값을 모든 글꼴 두께에 더합니다.
+
+    - find : Customize Font charset
+      replace : 글꼴 문자 집합 사용자 지정
+
+    - find : Changes the charset used for all fonts to user specified one.
+      replace : 모든 글꼴에 사용되는 문자 집합을 사용자가 지정한 것으로 변경합니다.
+
+    - find : IGNORE ERRORS
+      replace : 오류 무시
+
+    - find : Ignore Resource errors
+      replace : 리소스 오류 무시
+
+    - find : Prevents the client from displaying a variety of Error messages (but not all of them) including missing files. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of missing files.
+      replace : 클라이언트가 누락된 파일을 포함한 다양한 오류 메시지를 표시하지 않도록 합니다(모두는 아님). 메시지는 디버거로 전송됩니다. 이는 누락된 파일에도 불구하고 클라이언트가 작동함을 보장하지 않습니다.
+
+    - find : Ignore Palette errors
+      replace : 팔레트 오류 무시
+
+    - find : Prevents the client from displaying error messages about missing palettes. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of missing files.
+      replace : 클라이언트가 누락된 팔레트에 대한 오류 메시지를 표시하지 않도록 합니다. 대신 메시지는 디버거로 전송됩니다. 이는 누락된 파일에도 불구하고 클라이언트가 작동함을 보장하지 않습니다.
+
+    - find : Ignore Lua errors
+      replace : Lua 오류 무시
+
+    - find : Prevents the client from displaying error messages from lua code like 'attempt to call nil value'. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of the errors.
+      replace : 클라이언트가 'nil 값을 호출하려고 시도'와 같은 Lua 코드 오류 메시지를 표시하지 않도록 합니다. 대신 메시지는 디버거로 전송됩니다. 이는 오류에도 불구하고 클라이언트가 작동함을 보장하지 않습니다.
+
+    - find : Ignore Quest errors
+      replace : 퀘스트 오류 무시
+
+    - find : Prevents the client from displaying error messages like 'Not found Quest Info = XXXX'. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of the errors.
+      replace : 클라이언트가 'Not found Quest Info = XXXX'와 같은 오류 메시지를 표시하지 않도록 합니다. 메시지는 디버거로 전송됩니다. 이는 오류에도 불구하고 클라이언트가 작동함을 보장하지 않습니다.
+
+    - find : Ignore Entry Queue errors
+      replace : 입장 대기열 오류 무시
+
+    - find : Prevents the client from displaying error messages related to Entry Queue. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of the errors.
+      replace : 클라이언트가 입장 대기열 관련 오류 메시지를 표시하지 않도록 합니다. 대신 메시지는 디버거로 전송됩니다. 이는 오류에도 불구하고 클라이언트가 작동함을 보장하지 않습니다.
+
+    - find : MSGBOX CUSTOMIZATIONS
+      replace : 메시지박스 사용자 지정
+
+    - find : Change MessageBox to Beep
+      replace : 메시지박스를 비프음으로 변경
+
+    - find : Makes the client produce the user specified sound (using MessageBeep function) instead of showing a MessageBox.
+      replace : 클라이언트가 메시지박스를 표시하는 대신 사용자가 지정한 소리를 내도록 합니다 (MessageBeep 함수 사용).
+
+    - find : Show icon in MessageBox
+      replace : 메시지박스에 아이콘 표시
+
+    - find : Makes the client show the user specified icon inside MessageBoxes along with the message text.
+      replace : 클라이언트가 메시지박스에 메시지 텍스트와 함께 사용자가 지정한 아이콘을 표시하도록 합니다.
+
+    - find : Disable MessageBoxes
+      replace : 메시지박스 비활성화
+
+    - find : Disables all MessageBoxes from appearing to show any errors/warnings/informations etc.
+      replace : 모든 메시지박스가 오류/경고/정보 등을 표시하지 않도록 비활성화합니다.
+
+  # CHARACTER
+    - find : CHARACTER CUSTOMIZATION
+      replace : 캐릭터 사용자 지정
+
+    - find : Use official cloth palettes
+      replace : 공식 의상 팔레트 사용
+
+    - find : Use Official Cloth Palette on all Langtypes. Cannot use this if you are using the <b>Enable Custom Jobs</b> patch.
+      replace : 모든 Langtype에서 공식 의상 팔레트를 사용합니다. <b>사용자 정의 직업 활성화</b> 패치를 사용하는 경우 사용할 수 없습니다.
+
+    - find : Disable GM sprite
+      replace : GM 스프라이트 비활성화
+
+    - find : Disable GM sprites whilst keeping all the functionality intact like Yellow name and Admin right click menu.
+      replace : GM 스프라이트를 비활성화하면서 노란 이름과 관리자 우클릭 메뉴 같은 모든 기능은 유지합니다.
+
+    - find : Enable Emblem hover for BG [Experimental]
+      replace : BG에서 엠블럼 표시 활성화 [실험적]
+
+    - find : Makes the client show the Emblem on top of the character for Battleground mode as well along with GvG.
+      replace : 클라이언트가 캐릭터 위에 엠블럼을 표시하도록 하며, GvG뿐만 아니라 전장 모드에서도 적용됩니다.
+
+    - find : Restore model culling
+      replace : 모델 컬링 복원
+
+    - find : Culls models in front of player by turning them transparent.
+      replace : 플레이어 앞의 모델을 투명하게 만들어 가립니다.
+
+    - find : Always see hidden/cloaked objects
+      replace : 항상 숨겨진/은신한 객체 보기
+
+    - find : Always see black silhouette of hidden objects as if the player has intravision status.
+      replace : 플레이어가 투시 상태인 것처럼 숨겨진 객체의 검은 실루엣을 항상 표시합니다.
+
+    - find : Customize Quick Switch delay
+      replace : 빠른 전환 지연 사용자 지정
+
+    - find : Change quick item switch delay ticks with user specified value.
+      replace : 빠른 아이템 전환 지연 틱을 사용자가 지정한 값으로 변경합니다.
+
+    - find : Allow party leader to leave
+      replace : 파티장이 떠날 수 있도록 허용
+
+    - find : Allow leader to leave the party if no members are on map.
+      replace : 맵에 파티원이 없을 경우 파티장이 파티를 떠날 수 있도록 허용합니다.
+
+    - find : Allow spam skills by hotkey
+      replace : 단축키로 스킬 연속 사용 허용
+
+    - find : Allow spamming of skills by continuous press of hotkey.
+      replace : 단축키를 계속 누르면 스킬을 연속으로 사용할 수 있도록 허용합니다.
+
+    - find : Allow guild activities in clan
+      replace : 클랜 내 길드 활동 허용
+
+    - find : Remove restriction of guild functionality while being a member of a clan.
+      replace : 클랜에 속해 있을 때 길드 기능 제한을 제거합니다.
+
+    - find : Restore auto follow
+      replace : 자동 추적 복원
+
+    - find : Restore the auto follow functionality in RO-zero clients.
+      replace : RO-zero 클라이언트에서 자동 추적 기능을 복원합니다.
+
+    - find : Customize auto follow stop delay
+      replace : 자동 추적 중지 지연 사용자 지정
+
+    - find : Set the auto-follow stopping delay (not starting delay) to user specified value.
+      replace : 자동 추적 중지 지연(시작 지연 아님)을 사용자가 지정한 값으로 설정합니다.
+
+    - find : Draw Shield on top
+      replace : 방패를 위에 표시
+
+    - find : Moves the shield sprite closer to camera for drawing on top of other player sprites.
+      replace : 방패 스프라이트를 카메라 쪽으로 이동시켜 다른 플레이어 스프라이트 위에 표시합니다.
+
+    - find : Show Damage for GvG
+      replace : GvG에서 피해 표시
+
+    - find : Enables the display of damage digits on GvG maps.
+      replace : GvG 맵에서 피해 수치를 표시하도록 활성화합니다.
+
+    - find : INCREASE HAIRS
+      replace : 헤어 스타일 수 증가
+
+    - find : Allow 65k hair styles
+      replace : 65,000개 헤어 스타일 허용
+
+    - find : Raises the maximum hairstyle limit to 65535 from the default value.
+      replace : 기본값에서 최대 헤어 스타일 제한을 65,535로 늘립니다.
+
+    - find : Increase hair styles
+      replace : 헤어 스타일 수 증가
+
+    - find : Raises the maximum hairstyle limit to user specified value (upto 65535).
+      replace : 최대 헤어 스타일 제한을 사용자가 지정한 값(최대 65,535)으로 늘립니다.
+
+    - find : AUTO FOLLOW CUSTOMIZATION
+      replace : 자동 추적 사용자 지정
+
+    - find : Disable auto follow
+      replace : 자동 추적 비활성화
+
+    - find : Disables player auto follow on Shift + Right click.
+      replace : Shift + 마우스 오른쪽 클릭 시 플레이어 자동 추적을 비활성화합니다.
+
+    - find : Decrease auto follow delay
+      replace : 자동 추적 지연 감소
+
+    - find : Decrease the auto follow delay to user specified value.
+      replace : 자동 추적 지연을 사용자가 지정한 값으로 줄입니다.
+
+    - find : AURA CUSTOMIZATION
+      replace : 오라 사용자 지정
+
+    - find : Customize Aura sprites
+      replace : 오라 스프라이트 사용자 지정
+
+    - find : This option will make it so your warp portals will not be affected by your aura sprites. For this you will have to make aurafloat.tga and auraring.bmp and place them in your 'data\texture\effect' folder.
+      replace : 이 옵션은 워프 포탈이 오라 스프라이트의 영향을 받지 않도록 합니다. 이를 위해 aurafloat.tga와 auraring.bmp를 만들어 'data\texture\effect' 폴더에 넣어야 합니다.
+
+    - find : Customize Aura display limits
+      replace : 오라 표시 제한 사용자 지정
+
+    - find : Allows the client to display standard auras within user specified limits for Classes and Levels.
+      replace : 클라이언트가 클래스와 레벨에 대해 사용자가 지정한 제한 내에서 표준 오라를 표시하도록 허용합니다.
+
+    - find : <font color="#9F00EF">CHA</font><font color="#5F00FF">T CO</font><font color="blue">LOR </font><font color="green">CUS</font><font color="yellow">TOM</font><font color="orange">IZA</font><font color="red">TION</font>
+      replace : <font color="green">채</font><font color="yellow">팅</font><font color="orange"> 색</font><font color="red">상 </font><font color="blue">사</font><font color="#5F00FF">용자</font><font color="#9F00EF"> 지정</font>
+
+    - find : Customize chat color (GM)
+      replace : GM 채팅 색상 사용자 지정
+
+    - find : Changes the GM Chat color to the specified value. Default value is ffff00 (Yellow).
+      replace : GM 채팅 색상을 사용자가 지정한 값으로 변경합니다. 기본값은 ffff00 (노랑)입니다.
+
+    - find : Customize chat color (Guild)
+      replace : 길드 채팅 색상 사용자 지정
+
+    - find : Changes the Guild Chat color to the specified value. Default Value is b4ffb4 (Light Green).
+      replace : 길드 채팅 색상을 사용자가 지정한 값으로 변경합니다. 기본값은 b4ffb4 (연두색)입니다.
+
+    - find : Customize chat color (Party - Others)
+      replace : 파티 채팅 색상 사용자 지정 (다른 멤버)
+
+    - find : Changes the Party Chat color for other members to the specified value. Default value is ffc8c8 (Pinkish).
+      replace : 다른 멤버의 파티 채팅 색상을 사용자가 지정한 값으로 변경합니다. 기본값은 ffc8c8 (분홍빛)입니다.
+
+    - find : Customize chat color (Party - Self)
+      replace : 파티 채팅 색상 사용자 지정 (자신)
+
+    - find : Changes the Party Chat color for the playing character to the specified value. Default value is ffc800 (Orange).
+      replace : 플레이어 캐릭터의 파티 채팅 색상을 사용자가 지정한 값으로 변경합니다. 기본값은 ffc800 (주황)입니다.
+
+    - find : Customize chat color (Public - Others)
+      replace : 공개 채팅 색상 사용자 지정 (다른 플레이어)
+
+    - find : Changes the Public Chat color for other players to the specified value. Default value is ffffff (White).
+      replace : 다른 플레이어의 공개 채팅 색상을 사용자가 지정한 값으로 변경합니다. 기본값은 ffffff (흰색)입니다.
+
+    - find : Customize chat color (Public - Self)
+      replace : 공개 채팅 색상 사용자 지정 (자신)
+
+    - find : Changes the Public Chat color for the playing character to the specified value. Default value is 00ff00 (Green).
+      replace : 플레이어 캐릭터의 공개 채팅 색상을 사용자가 지정한 값으로 변경합니다. 기본값은 00ff00 (초록)입니다.
+
+    - find : SKIP CHEATER CHECK
+      replace : 치트 검사 건너뛰기
+
+    - find : Skip Friend list cheat check
+      replace : 친구 목록 치트 검사 건너뛰기
+
+    - find : Prevents warnings during PM's when the sender has similar name to one of your friends.
+      replace : 발신자가 친구 중 한 명과 유사한 이름을 가질 경우 PM 중 경고를 방지합니다.
+
+    - find : Skip Guild Member cheat check
+      replace : 길드 멤버 치트 검사 건너뛰기
+
+    - find : Prevents warnings during PMs when the sender has similar name to one of your guild members.
+      replace : 발신자가 길드 멤버 중 한 명과 유사한 이름을 가질 경우 PM 중 경고를 방지합니다.
+
+    - find : WALK DELAY
+      replace : 걷기 지연
+
+    - find : Remove Walk Delay
+      replace : 걷기 지연 제거
+
+    - find : Add no delay to walking clicks. But client may likely send more/duplicated packets.
+      replace : 걷기 클릭에 지연을 추가하지 않습니다. 그러나 클라이언트가 더 많은/중복된 패킷을 보낼 수 있습니다.
+
+    - find : Customize Walk Delay
+      replace : 걷기 지연 사용자 지정
+
+    - find : Change the delay for walking clicks to user specified value. But client may likely send more/duplicated packets.
+      replace : 걷기 클릭 지연을 사용자가 지정한 값으로 변경합니다. 그러나 클라이언트가 더 많은/중복된 패킷을 보낼 수 있습니다.
+
+    - find : RESURRECT BUTTON VISIBILITY
+      replace : 부활 버튼 표시 여부
+
+    - find : Skip Resurrection button
+      replace : 부활 버튼 건너뛰기
+
+    - find : Skip showing resurrection button when you die with Token of Ziegfried in inventory.
+      replace : 인벤토리에 지크프리드의 부활 아이템이 있을 때 사망 시 부활 버튼 표시를 건너뜁니다.
+
+    - find : Always show Resurrection button
+      replace : 항상 부활 버튼 표시
+
+    - find : Make the client always show Resurrection button with Token of Ziegfried in inventory irrespective of map type.
+      replace : 인벤토리에 지크프리드의 부활 아이템이 있을 경우 맵 종류와 관계없이 항상 부활 버튼을 표시하도록 합니다.
+
+  # CLIENT
+    - find : RESIZE HP BAR
+      replace : HP 바 크기 조정
+
+    - find : Resize Player HP/SP bar
+      replace : 플레이어 HP/SP 바 크기 조정
+
+    - find : Resize the HP/SP bar drawn for playing character as per user specified value.
+      replace : 플레이어 캐릭터의 HP/SP 바를 사용자가 지정한 값으로 크기 조정합니다.
+
+    - find : Resize Normal mob HP bar
+      replace : 일반 몬스터 HP 바 크기 조정
+
+    - find : Resize the HP bar drawn for regular monsters as per user specified value.
+      replace : 일반 몬스터의 HP 바를 사용자가 지정한 값으로 크기 조정합니다.
+
+    - find : Resize Mini-Boss mob HP bar
+      replace : 미니 보스 몬스터 HP 바 크기 조정
+
+    - find : Resize the HP bar drawn for Mini-Boss monsters as per user specified value.
+      replace : 미니 보스 몬스터의 HP 바를 사용자가 지정한 값으로 크기 조정합니다.
+
+    - find : Resize Boss mob HP bar
+      replace : 보스 몬스터 HP 바 크기 조정
+
+    - find : Resize the HP bar drawn for Boss monsters as per user specified value.
+      replace : 보스 몬스터의 HP 바를 사용자가 지정한 값으로 크기 조정합니다.
+
+    - find : DISABLE EFFECT
+      replace : 효과 비활성화
+
+    - find : Disable Quake skill effect
+      replace : 지진 스킬 효과 비활성화
+
+    - find :  Disables the Earthquake skill effect.
+      replace : 지진 스킬 효과를 비활성화합니다.
+
+    - find : Disable Hallucination wavy screen
+      replace : 환각 화면 흔들림 효과 비활성화
+
+    - find : Disables the Hallucination effect (screen becomes wavy and lags the client), used by baphomet, horongs, and such.
+      replace : 바포메트, 호롱 등에서 사용하는 환각 효과(화면이 흔들리고 클라이언트가 느려짐)를 비활성화합니다.
+
+    - find : Disable Blind skills effect
+      replace : 실명 스킬 효과 비활성화
+
+    - find : Disables the Blind skill effect (screen becomes dark).
+      replace : 실명 스킬 효과(화면이 어두워짐)를 비활성화합니다.
+
+    - find : SLASH COMMANDS
+      replace : 슬래시 명령어
+
+    - find : Always enable '/who' command
+      replace : 항상 '/who' 명령어 활성화
+
+    - find : Enable <b>/w</b> and <b>/who</b> command for all Langtypes.
+      replace : 모든 Langtype에서 <b>/w</b> 및 <b>/who</b> 명령어를 활성화합니다.
+
+    - find : Always enable '/showname' command
+      replace : 항상 '/showname' 명령어 활성화
+
+    - find : Enables <b>/showname</b> command for all Langtypes
+      replace : 모든 Langtype에서 <b>/showname</b> 명령어를 활성화합니다.
+
+    - find : Allow unknown '/command's [Experimental]
+      replace : 알 수 없는 '/명령어' 허용 [실험적]
+
+    - find : Sends all unknown '<b>/command</b>' sequences to server (for allowing server side '<b>/command</b>'s) instead of showing "Invalid command".
+      replace : 모든 알 수 없는 '<b>/command</b>' 시퀀스를 서버로 보내 서버 측 '<b>/command</b>'를 허용하도록 하며, "잘못된 명령어"를 표시하지 않습니다.
+
+    - find : SKILL CHATTER REMOVAL
+      replace : 스킬 대사 제거
+
+    - find : Remove Dancer's Scream chatter
+      replace : 무희의 스크림 대사 제거
+
+    - find : Disable the random chat appearing due to Dancer's Scream skill from file dc_scream.txt .
+      replace : dc_scream.txt 파일에서 무희의 스크림 스킬로 인해 나타나는 랜덤 채팅을 비활성화합니다.
+
+    - find : Remove Bard's Frost Joke chatter
+      replace : 바드의 프로스트 조크 대사 제거
+
+    - find : Disable the random chat appearing due to Bard's Frost Joke skill from file ba_frostjoke.txt .
+      replace : ba_frostjoke.txt 파일에서 바드의 프로스트 조크 스킬로 인해 나타나는 랜덤 채팅을 비활성화합니다.
+
+    - find : RESIZE BOX
+      replace : 박스 크기 조정
+
+    - find : Resize Chat Box
+      replace : 채팅 박스 크기 조정
+
+    - find : Resize the Main/Battle chat box max input chars from <b>70</b> to user specified value (234 is usually used).
+      replace : 메인/배틀 채팅 박스의 최대 입력 문자를 <b>70</b>에서 사용자가 지정한 값으로 조정합니다 (일반적으로 234 사용).
+
+    - find : Resize Chat Room Box
+      replace : 채팅방 박스 크기 조정
+
+    - find : Resize the chat room box max input chars from <b>70</b> to user specified value (234 is usually used).
+      replace : 채팅방 박스의 최대 입력 문자를 <b>70</b>에서 사용자가 지정한 값으로 조정합니다 (일반적으로 234 사용).
+
+    - find : Resize PM Box
+      replace : 귓속말 박스 크기 조정
+
+    - find : Resize the PM chat box max input chars from <b>70</b> to user specified value (234 is usually used).
+      replace : 귓속말 박스의 최대 입력 문자를 <b>70</b>에서 사용자가 지정한 값으로 조정합니다 (일반적으로 234 사용).
+
+    - find : Resize NPC Dialog Box
+      replace : NPC 대화 박스 크기 조정
+
+    - find : Changes the Max input chars of NPC Dialog boxes to user specified value within (2052 - 4096).
+      replace : NPC 대화 박스의 최대 입력 문자를 (2052 - 4096) 범위 내에서 사용자가 지정한 값으로 변경합니다.
+
+    - find : ROULETTE VISIBILITY
+      replace : 룰렛 아이콘 표시 여부
+
+    - find : Hide Roulette icon
+      replace : 룰렛 아이콘 숨기기
+
+    - find : Hide Roulette Icon that is present in some clients.
+      replace : 일부 클라이언트에 존재하는 룰렛 아이콘을 숨깁니다.
+
+    - find : Show Roulette icon
+      replace : 룰렛 아이콘 표시
+
+    - find : Restores the Roulette Icon that was removed in new clients.
+      replace : 새로운 클라이언트에서 제거된 룰렛 아이콘을 복원합니다.
+
+    - find : CASH SHOP CUSTOMIZATION
+      replace : 캐시샵 사용자 지정
+
+    - find : Move Cash Shop icon
+      replace : 캐시샵 아이콘 이동
+
+    - find : Move the Cash Shop icon to user specified co-ordinates. Positive values are relative to left and top, Negative values are relative to right and bottom.
+      replace : 캐시샵 아이콘을 사용자가 지정한 좌표로 이동합니다. 양수 값은 왼쪽과 위 기준, 음수 값은 오른쪽과 아래 기준입니다.
+
+    - find : Enforce 0 C in Cash Shop
+      replace : 캐시샵에서 C 값을 0으로 강제
+
+    - find : Enforce the <b>C</b> field to use 0 instead of random values in cash shop.
+      replace : 캐시샵의 <b>C</b> 필드를 랜덤 값 대신 0으로 강제합니다.
+
+    - find : Use default web browser in Cash Shop
+      replace : 캐시샵에서 기본 웹 브라우저 사용
+
+    - find : Open URL in the cashshop window with default web browser instead of IExplore.
+      replace : 캐시샵 창에서 URL을 IExplore 대신 기본 웹 브라우저로 엽니다.
+
+    - find : SHOP EQ PREVIEW
+      replace : 상점 장비 미리보기
+
+    - find : Enable equipment preview in Cash Shop
+      replace : 캐시샵에서 장비 미리보기 활성화
+
+    - find : Add support for preview button in cash shop (right click the items to see the button). Needs the switch enabled in server-side too.
+      replace : 캐시샵에서 미리보기 버튼을 지원합니다 (아이템을 우클릭하면 버튼 표시). 서버 측에서도 옵션을 활성화해야 합니다.
+
+    - find : Enable equipment preview in Trader Shop
+      replace : 교환 상점에서 장비 미리보기 활성화
+
+    - find : Add support for preview button in older style trader cash shops (right click the items to see the button). Needs the switch enabled in server-side too.
+      replace : 구형 교환 캐시샵에서 미리보기 버튼을 지원합니다 (아이템을 우클릭하면 버튼 표시). 서버 측에서도 옵션을 활성화해야 합니다.
+
+    - find : CASH SHOP VISIBILITY
+      replace : 캐시샵 표시 여부
+
+    - find : Hide Cash Shop icon
+      replace : 캐시샵 아이콘 숨기기
+
+    - find : Hide Cash Shop Icon in clients that already show them.
+      replace : 이미 표시되는 클라이언트에서 캐시샵 아이콘을 숨깁니다.
+
+    - find : Show Cash Shop icon
+      replace : 캐시샵 아이콘 표시
+
+    - find : Restores the Cash Shop Icon in clients that can have them. (Primarily RE clients hide them).
+      replace : 캐시샵 아이콘을 표시할 수 있는 클라이언트에서 복원합니다. (주로 RE 클라이언트에서 숨겨짐).
+
+    - find : CAMERA ANGLES
+      replace : 카메라 각도
+
+    - find : Increase Camera Angles (LOW)
+      replace : 카메라 각도 증가 (낮음)
+
+    - find : Unlocks the possible camera angles to give more freedom of placement. Enables a lower range of around <b>30 degrees</b>.
+      replace : 카메라 각도를 해제하여 배치의 자유도를 높입니다. 약 <b>30도</b>의 낮은 범위를 허용합니다.
+
+    - find : Increase Camera Angles (MEDIUM)
+      replace : 카메라 각도 증가 (중간)
+
+    - find : Unlocks the possible camera angles to give more freedom of placement. Enables a medium range of around <b>42 degrees</b>.
+      replace : 카메라 각도를 해제하여 배치의 자유도를 높입니다. 약 <b>42도</b>의 중간 범위를 허용합니다.
+
+    - find : Increase Camera Angles (HIGH)
+      replace : 카메라 각도 증가 (높음)
+
+    - find : Unlocks the possible camera angles to give more freedom of placement. Enables an almost ground-level camera of around <b>65 degrees</b>.
+      replace : 카메라 각도를 해제하여 배치의 자유도를 높입니다. 약 <b>65도</b>의 거의 지면 수준 카메라를 허용합니다.
+
+    - find : ZOOM OUT
+      replace : 줌 아웃
+
+    - find : Decrease Zoom Out (to 25%)
+      replace : 줌 아웃 감소 (25%)
+
+    - find : Decreases the zoom-out range to approx. 25% of maximum.
+      replace : 줌 아웃 범위를 최대치의 약 25%로 줄입니다.
+
+    - find : Increase Zoom Out (to 50%)
+      replace : 줌 아웃 증가 (50%)
+
+    - find : Increases the zoom-out range to approx. 50% of Maximum.
+      replace : 줌 아웃 범위를 최대치의 약 50%로 늘립니다.
+
+    - find : Increase Zoom Out (to 75%)
+      replace : 줌 아웃 증가 (75%)
+
+    - find : Increases the zoom-out range to approx. 75% of Maximum.
+      replace : 줌 아웃 범위를 최대치의 약 75%로 늘립니다.
+
+    - find : Increase Zoom Out (to Max)
+      replace : 줌 아웃 증가 (최대)
+
+    - find : Maximizes the zoom-out range.
+      replace : 줌 아웃 범위를 최대화합니다.
+
+    - find : LOGIN MODE
+      replace : 로그인 모드
+
+    - find : Restore Login Window
+      replace : 로그인 창 복원
+
+    - find : Circumvents Gravity's new token-based login system and restores the normal login window.
+      replace : Gravity의 새로운 토큰 기반 로그인 시스템을 우회하고 일반 로그인 창을 복원합니다.
+
+    - find : Use SSO Login Packet
+      replace : SSO 로그인 패킷 사용
+
+    - find : Enable using SSO packet on all Langtype (to use login and pass with a launcher).
+      replace : 모든 Langtype에서 SSO 패킷 사용을 활성화합니다 (런처로 로그인과 비밀번호 사용).
+
+    - find : Use Old Login Packet
+      replace : 구형 로그인 패킷 사용
+
+    - find : Enable the old login packet (0x64) used for Login Window. Intended for new clients which cannot restore the login window anymore.
+      replace : 로그인 창에 사용되는 구형 로그인 패킷(0x64)을 활성화합니다. 더 이상 로그인 창을 복원할 수 없는 새로운 클라이언트용입니다.
+
+    - find : CHAT REPEAT
+      replace : 채팅 반복
+
+    - find : Allow unlimited chat repeat
+      replace : 무제한 채팅 반복 허용
+
+    - find : Remove the clientside limitation for maximum repeated lines.
+      replace : 클라이언트 측 최대 반복 줄 제한을 제거합니다.
+
+    - find : Customize chat repeat limit
+      replace : 채팅 반복 제한 사용자 지정
+
+    - find : Change the clientside limit for maximum repeated lines in chat box from 2 to user specified value.
+      replace : 채팅 박스에서 최대 반복 줄 제한을 2에서 사용자가 지정한 값으로 변경합니다.
+
+    - find : SLEEP DELAY CUSTOMIZATION
+      replace : 슬립 지연 사용자 지정
+
+    - find : Add Input Delay
+      replace : 입력 지연 추가
+
+    - find : Adds the user specified value to input delay.
+      replace : 입력 지연에 사용자가 지정한 값을 추가합니다.
+
+    - find : Customize game loop delay
+      replace : 게임 루프 지연 사용자 지정
+
+    - find : Change the sleep delay inside of game loop to user specified value.
+      replace : 게임 루프 내 슬립 지연을 사용자가 지정한 값으로 변경합니다.
+  
+  # SPECIAL
+    - find : SPECIAL CUSTOMIZATIONS
+      replace : 특별 사용자 지정
+
+    - find : Enable Custom Shields
+      replace : 사용자 정의 방패 활성화
+
+    - find : Enables the use of Custom Shield Types (using Lua Files similar to Xray).
+      replace : Xray와 유사한 Lua 파일을 사용하여 사용자 정의 방패 유형을 사용할 수 있도록 합니다.
+
+    - find : Enable Custom Jobs
+      replace : 사용자 정의 직업 활성화
+
+    - find : Enables the use of Custom Jobs (using Lua Files similar to Xray).
+      replace : Xray와 유사한 Lua 파일을 사용하여 사용자 정의 직업을 사용할 수 있도록 합니다.
+
+    - find : Enable Custom Homunculi
+      replace : 사용자 정의 호문쿨루스 활성화
+
+    - find : Enables the use of Custom Homunculus (using Lua Files). The <b>'ReqJobName'</b> function is used for homunculus as well, so no extra files needed.
+      replace : Lua 파일을 사용하여 사용자 정의 호문쿨루스를 사용할 수 있도록 합니다. <b>'ReqJobName'</b> 함수가 호문쿨루스에도 사용되므로 추가 파일은 필요하지 않습니다.
+
+    - find : Add Chris' lua overrides [Experimental]
+      replace : Chris의 Lua 오버라이드 추가 [실험적]
+
+    - find : Adds the lua files provided by llchrisll to override the existing lua tables and functions. Please check this <a href="https://llchrisll.github.io/ROTPDocs/addons/#custom-lua-support">link</a> for more details.
+      replace : llchrisll이 제공한 Lua 파일을 추가하여 기존 Lua 테이블과 함수를 덮어씁니다. 자세한 내용은 <a href="https://llchrisll.github.io/ROTPDocs/addons/#custom-lua-support">링크</a>를 확인하세요.
+
+    - find : SKILL CUSTOMIZATIONS
+      replace : 스킬 사용자 지정
+
+    - find : Enable Custom Player skills [Experimental]
+      replace : 사용자 정의 플레이어 스킬 활성화 [실험적]
+
+    - find : Enables the use of custom skills castable on players (using Lua Files).
+      replace : Lua 파일을 사용하여 플레이어에게 시전할 수 있는 사용자 정의 스킬을 사용할 수 있도록 합니다.
+
+    - find : Enable Custom Homunculus skills [Experimental]
+      replace : 사용자 정의 호문쿨루스 스킬 활성화 [실험적]
+
+    - find : Enables the use of custom skills for Homunculus (using Lua Files).
+      replace : Lua 파일을 사용하여 호문쿨루스의 사용자 정의 스킬을 사용할 수 있도록 합니다.
+
+    - find : Enable Custom Mercenary skills [Experimental]
+      replace : 사용자 정의 용병 스킬 활성화 [실험적]
+
+    - find : Enables the use of custom skills for Mercenaries (using Lua Files).
+      replace : Lua 파일을 사용하여 용병의 사용자 정의 스킬을 사용할 수 있도록 합니다.
+
+  # DATA
+    - find : DATA CUSTOMIZATION
+      replace : 데이터 사용자 지정
+
+    - find : Customize Max Emblem file size
+      replace : 엠블렘 파일 최대 크기 사용자 지정
+
+    - find : Change the maximum limit used for guild emblem's file size.
+      replace : 길드 엠블렘 파일 크기에 사용되는 최대 제한을 변경합니다.
+
+    - find : Customize Rodex tax
+      replace : Rodex 세금 사용자 지정
+
+    - find : Change the tax deducted while sending items by rodex.
+      replace : Rodex로 아이템을 보낼 때 공제되는 세금을 변경합니다.
+
+    - find : Customize guild exp limit
+      replace : 길드 경험치 제한 사용자 지정
+
+    - find : Change guild exp limit percent. Default value is 50%.
+      replace : 길드 경험치 제한 비율을 변경합니다. 기본값은 50%입니다.
+
+    - find : Customize adventurer agency levels
+      replace : 모험가 에이전시 레벨 사용자 지정
+
+    - find : Changes the default level range on the Adventure Agency.
+      replace : 모험가 에이전시의 기본 레벨 범위를 변경합니다.
+
+    - find : Enable Official custom .eot Fonts
+      replace : 공식 사용자 정의 .eot 글꼴 활성화
+
+    - find : This option enables use of Official Custom Fonts (EOT fonts in data folder) for all Langtypes.
+      replace : 이 옵션은 모든 Langtype에서 공식 사용자 정의 글꼴(EOT 글꼴, data 폴더 내)을 사용할 수 있도록 합니다.
+
+    - find : Fix charset for Fonts
+      replace : 글꼴 문자 집합 수정
+
+    - find : Make the client use correct charset for Official Custom Fonts (EOT & OTF fonts) on all Langtypes.
+      replace : 클라이언트가 모든 Langtype에서 공식 사용자 정의 글꼴(EOT 및 OTF 글꼴)에 대해 올바른 문자 집합을 사용하도록 합니다.
+
+    - find : Use Ascii on All
+      replace : 모든 경우에 ASCII 사용
+
+    - find : Makes the client Enable ASCII irrespective of Font or Langtypes.
+      replace : 글꼴이나 Langtype과 관계없이 클라이언트가 ASCII를 활성화하도록 합니다.
+
+    - find : Customize screenshot quality
+      replace : 스크린샷 품질 사용자 지정
+
+    - find : Changes the JPEG quality parameter for screenshots to user specified value.
+      replace : 스크린샷의 JPEG 품질 매개변수를 사용자가 지정한 값으로 변경합니다.
+
+    - find : Always call SelectKoreaClientInfo()
+      replace : 항상 SelectKoreaClientInfo() 호출
+
+    - find : Ensures SelectKoreaClientInfo() is called along with SelectClientInfo() allowing you to use features that would be only visible on Korean Service Type.
+      replace : SelectClientInfo()와 함께 SelectKoreaClientInfo()가 호출되도록 하여 한국 서비스 타입에서만 보이는 기능을 사용할 수 있도록 합니다.
+
+    - find : Read data folder first
+      replace : data 폴더 우선 읽기
+
+    - find : Gives the 'data' directory contents priority over GRF contents.
+      replace : <b>'data'</b> 디렉터리의 내용을 GRF 내용보다 우선시합니다.
+
+    - find : Use plain text descriptions
+      replace : 일반 텍스트 설명 사용
+
+    - find : Enforces client to treat txt file contents as ASCII, not encoded.
+      replace : 클라이언트가 txt 파일 내용을 인코딩하지 않고 ASCII로 처리하도록 강제합니다.
+
+    - find : Always load korea ExternalSettings lua file
+      replace : 항상 Korea ExternalSettings lua 파일 로드
+
+    - find : Makes the client load Korea server's ExternalSettings file for all langtypes.
+      replace : 클라이언트가 모든 Langtype에서 한국 서버의 ExternalSettings 파일을 로드하도록 합니다.
+
+    - find : Increase headgear viewID limit
+      replace : 투구 ViewID 제한 증가
+
+    - find : Changes the limit for the headgear ViewIDs from default (1000-3000 depending on client) to User Defined value (max 64000).
+      replace : 투구 ViewID 제한을 기본값(클라이언트에 따라 1000-3000)에서 사용자 정의 값(최대 64000)으로 변경합니다.
+
+    - find : Remove 3D bones limit
+      replace : 3D 뼈대 제한 제거
+
+    - find : Enables the use of custom 3D monsters (Granny) by removing the Hard-coded ID limit.
+      replace : 하드코딩된 ID 제한을 제거하여 사용자 정의 3D 몬스터(Granny)를 사용할 수 있도록 합니다.
+
+    - find : Load custom Quest Lua/Lub files
+      replace : 사용자 정의 퀘스트 Lua/Lub 파일 로드
+
+    - find : Enables loading of custom lua files used for quests. You need to specify the list of files via a YAML file. All the files need to be inside 'lua files\quest' folder.
+      replace : 퀘스트에 사용되는 사용자 정의 Lua 파일을 로드할 수 있도록 합니다. YAML 파일을 통해 파일 목록을 지정해야 하며, 모든 파일은 'lua files\quest' 폴더 안에 있어야 합니다.
+
+    - find : Increase map quality
+      replace : 맵 품질 향상
+
+    - find : Makes client use 32 bit color maps for Map Textures.
+      replace : 클라이언트가 맵 텍스처에 32비트 색상 맵을 사용하도록 합니다.
+
+    - find : Enable effect for all maps
+      replace : 모든 맵에서 효과 활성화
+
+    - find : Make the client load the corresponding file in EffectTool folder for all maps.
+      replace : 클라이언트가 모든 맵에 대해 EffectTool 폴더의 해당 파일을 로드하도록 합니다.
+
+    - find : Load iteminfo based on char server
+      replace : 캐릭터 서버 기반으로 iteminfo 로드
+
+    - find : Load ItemInfo file and call main function with selected char server name as argument.
+      replace : ItemInfo 파일을 로드하고 선택된 캐릭터 서버 이름을 인자로 하여 메인 함수를 호출합니다.
+
+    - find : Use icons from stateiconimginfo.lub
+      replace : stateiconimginfo.lub의 아이콘 사용
+
+    - find : Disable hardcoded status icons and read them only from stateiconimginfo.lub.
+      replace : 하드코딩된 상태 아이콘을 비활성화하고 stateiconimginfo.lub에서만 읽습니다.
+
+    - find : Fix act delay
+      replace : act 지연 수정
+
+    - find : Fix act delay for act files with big amount of frames.
+      replace : 많은 프레임을 가진 act 파일의 지연을 수정합니다.
+
+    - find : Add custom DLLs
+      replace : 사용자 정의 DLL 추가
+
+    - find : Makes the hexed client load the specified DLL and functions.
+      replace : 헥스된 클라이언트가 지정된 DLL과 함수를 로드하도록 합니다.
+
+    - find : Hide build info
+      replace : 빌드 정보 숨기기
+
+    - find : Hide the actual build info in client by 'NULL' ifying all related values.
+      replace : 클라이언트의 실제 빌드 정보를 'NULL' 처리하여 모든 관련 값을 숨깁니다.
+
+    - find : Disable camera lock
+      replace : 카메라 잠금 비활성화
+
+    - find : Disable locking of camera viewpoint rotation using ViewPointTable.txt
+      replace : ViewPointTable.txt를 사용한 카메라 시점 회전 잠금을 비활성화합니다.
+
+    - find : Disable map signs
+      replace : 맵 표식 비활성화
+
+    - find : Disable the use of mapInfo lub file to display map signs when player enters map.
+      replace : 플레이어가 맵에 들어갈 때 맵 표식을 표시하는 mapInfo lub 파일 사용을 비활성화합니다.
+
+    - find : Translate arrows to English
+      replace : 화살표를 영어로 번역
+
+    - find : Translate arrows & menu button texts in hotkey setting UI from korean to english
+      replace : 단축키 설정 UI의 화살표 및 메뉴 버튼 텍스트를 한국어에서 영어로 번역합니다.
+
+    - find : Use 'identified' drops for Boss (MVP) mob
+      replace : 보스(MVP) 몬스터에 '식별된' 드롭 사용
+
+    - find : Enforce MVP to drop item with the identified names.
+      replace : MVP가 식별된 이름으로 아이템을 드롭하도록 강제합니다.
+
+    - find : Translate client
+      replace : 클라이언트 번역
+
+    - find : Translates some of the Hard-coded Korean phrases using a user specified mapping file (defaults to <b>Translations_EN.yml</b>).
+      replace : 사용자가 지정한 매핑 파일을 사용하여 일부 하드코딩된 한국어 문구를 번역합니다 (기본값은 <b>Translations_EN.yml</b>).
+
+    - find : Translate taekwon names
+      replace : 태권 계열 이름 번역
+
+    - find : Translates the korean names of the Taekwon branch to English.
+      replace : 태권 계열의 한국어 이름을 영어로 번역합니다.
+
+    - find : Customize Captcha Decomp size
+      replace : 캡차 압축 해제 크기 사용자 지정
+
+    - find : Changes the default zlib max decompression size used for captcha images to user specified value.
+      replace : 캡차 이미지에 사용되는 기본 zlib 최대 압축 해제 크기를 사용자가 지정한 값으로 변경합니다.
+
+    - find : DISABLE PROTECTION
+      replace : 보호 기능 비활성화
+
+    - find : Disable HShield
+      replace : HShield 비활성화
+
+    - find : Disables HackShield from clients that use it.
+      replace : HackShield를 사용하는 클라이언트에서 이를 비활성화합니다.
+
+    - find : Disable Game Guard
+      replace : Game Guard 비활성화
+
+    - find : Disables Game Guard from clients that use it (Renewal clients have them).
+      replace : Game Guard를 사용하는 클라이언트에서 이를 비활성화합니다 (리뉴얼 클라이언트에 존재).
+
+    - find : Disable Cheat Defender Game Guard
+      replace : Cheat Defender Game Guard 비활성화
+
+    - find : Disables Cheat Defender Game Guard from new clients.
+      replace : 새로운 클라이언트에서 Cheat Defender Game Guard를 비활성화합니다.
+
+    - find : SKIP LUB
+      replace : LUB 건너뛰기
+
+    - find : Skip SignBoard lubs
+      replace : SignBoard lub 파일 건너뛰기
+
+    - find : Makes the client skip loading SignBoardList related lub files
+      replace : 클라이언트가 SignBoardList 관련 lub 파일 로드를 건너뛰도록 합니다.
+
+    - find : Skip Towninfo lub
+      replace : Towninfo lub 파일 건너뛰기
+
+    - find : Makes the client skip loading Towninfo.lub file
+      replace : 클라이언트가 Towninfo.lub 파일 로드를 건너뛰도록 합니다.
+
+    - find : READ .txt FILE
+      replace : .txt 파일 읽기
+
+    - find : Always read msgstringtable.txt
+      replace : 항상 msgstringtable.txt 읽기
+
+    - find : This option will force the client to read all the user interface messages from msgstringtable.txt instead of displaying the Korean messages.
+      replace : 이 옵션은 클라이언트가 한국어 메시지를 표시하지 않고 msgstringtable.txt에서 모든 UI 메시지를 읽도록 강제합니다.
+
+    - find : Always read questid2display.txt
+      replace : 항상 questid2display.txt 읽기
+
+    - find : Makes the client to load questid2display.txt on all Langtypes (instead of only 0).
+      replace : 클라이언트가 모든 Langtype에서 questid2display.txt를 로드하도록 합니다 (0만이 아니라).
+
+    - find : PATH CUSTOMIZATION
+      replace : 경로 사용자 지정
+
+    - find : Customize Default BGM file
+      replace : 기본 BGM 파일 사용자 지정
+
+    - find : Make the client load user specified MP3 file as default BGM used upon login to account instead of <b>bgm\01.mp3</b>.
+      replace : 클라이언트가 계정 로그인 시 기본 BGM으로 <b>bgm\01.mp3</b> 대신 사용자가 지정한 MP3 파일을 로드하도록 합니다.
+
+    - find : Customize Iteminfo lub
+      replace : Iteminfo lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>Iteminfo*.lub</b>.
+      replace : 클라이언트가 <b>Iteminfo*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize AchievementList lub
+      replace : AchievementList lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>AchievementList*.lub</b>.
+      replace : 클라이언트가 <b>AchievementList*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize MonsterSizeEffect lub
+      replace : MonsterSizeEffect lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>MonsterSizeEffect*.lub</b>.
+      replace : 클라이언트가 <b>MonsterSizeEffect*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize Towninfo lub
+      replace : Towninfo lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>Towninfo*.lub</b>.
+      replace : 클라이언트가 <b>Towninfo*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize PetEvolutionCln lub
+      replace : PetEvolutionCln lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>PetEvolutionCln*.lub</b>.
+      replace : 클라이언트가 <b>PetEvolutionCln*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize Tipbox lub
+      replace : Tipbox lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>Tipbox*.lub</b>.
+      replace : 클라이언트가 <b>Tipbox*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize CheckAttendance lub
+      replace : CheckAttendance lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>CheckAttendance*.lub</b>.
+      replace : 클라이언트가 <b>CheckAttendance*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize PrivateAirplane lub
+      replace : PrivateAirplane lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>PrivateAirplane*.lub</b>.
+      replace : 클라이언트가 <b>PrivateAirplane*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize MapInfo lub
+      replace : MapInfo lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>MapInfo*.lub</b>.
+      replace : 클라이언트가 <b>MapInfo*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize OngoingQuestInfoList lub
+      replace : OngoingQuestInfoList lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>OngoingQuestInfoList*.lub</b>.
+      replace : 클라이언트가 <b>OngoingQuestInfoList*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize RecommendedQuestInfoList lub
+      replace : RecommendedQuestInfoList lub 사용자 지정
+
+    - find : Make the client load user specified lua file instead of <b>RecommendedQuestInfoList*.lub</b>.
+      replace : 클라이언트가 <b>RecommendedQuestInfoList*.lub</b> 대신 사용자가 지정한 lua 파일을 로드하도록 합니다.
+
+    - find : Customize License File
+      replace : 라이선스 파일 사용자 지정
+
+    - find : Change the filename used for EULA from <b>..licence.txt</b> to user specified name (Path is relative to Data folder).
+      replace : EULA에 사용되는 파일명을 <b>..licence.txt</b>에서 사용자가 지정한 이름으로 변경합니다 (경로는 Data 폴더 기준).
+
+    - find : Customize ClientInfo file
+      replace : ClientInfo 파일 사용자 지정
+
+    - find : Change the clientinfo XML file loaded from *clientinfo.xml to user specified name.
+      replace : <b>*clientinfo.xml</b>에서 로드되는 clientinfo XML 파일을 사용자가 지정한 이름으로 변경합니다.
+
+    - find : SHARED BODY PALETTES
+      replace : 공유 바디 팔레트
+
+    - find : Enable shared body palettes - Male & Female
+      replace : 공유 바디 팔레트 활성화 - 남성 & 여성
+
+    - find : Makes the client use a single cloth palette set (body_%s_%d.pal) for all job classes but separate for both genders.
+      replace : 클라이언트가 모든 직업군에 대해 단일 의상 팔레트 세트(body_%s_%d.pal)를 사용하되 성별은 구분되도록 합니다.
+
+    - find : Enable shared body palettes - Unisex
+      replace : 공유 바디 팔레트 활성화 - 유니섹스
+
+    - find : Makes the client use a single cloth palette set (body_%d.pal) for all job classes & genders.
+      replace : 클라이언트가 모든 직업군과 성별에 대해 단일 의상 팔레트 세트(body_%d.pal)를 사용하도록 합니다.
+
+    - find : SHARED HEAD PALETTES
+      replace : 공유 헤드 팔레트
+
+    - find : Enable shared head palettes - Male & Female
+      replace : 공유 헤드 팔레트 활성화 - 남성 & 여성
+
+    - find : Makes the client use a single hair palette set (head_%s_%d.pal) for all hair styles but separate for both genders.
+      replace : 클라이언트가 모든 헤어 스타일에 대해 단일 헤어 팔레트 세트(head_%s_%d.pal)를 사용하되 성별은 구분되도록 합니다.
+
+    - find : Enable shared head palettes - Unisex
+      replace : 공유 헤드 팔레트 활성화 - 유니섹스
+
+    - find : Makes the client use a single hair palette set (head_%d.pal) for all hair styles and genders.
+      replace : 클라이언트가 모든 헤어 스타일과 성별에 대해 단일 헤어 팔레트 세트(head_%d.pal)를 사용하도록 합니다.
+
+    - find : MULTIPLE GRFS
+      replace : 다중 GRF
+
+    - find : Enable Multiple GRFs ( INI )
+      replace : 다중 GRF 활성화 (INI)
+
+    - find : Enables the use of multiple grf files by putting them in an INI file in your client folder. You can load upto 10 GRFs in total.
+      replace : 클라이언트 폴더의 INI 파일에 여러 GRF 파일을 넣어 사용할 수 있도록 합니다. 총 최대 10개의 GRF를 로드할 수 있습니다.
+
+    - find : Enable Multiple GRFs ( Embedded )
+      replace : 다중 GRF 활성화 (내장)
+
+    - find : Enables the use of multiple grf files without needing INI file in client folder. Instead you specify the INI file as input to the patch so it can embed the names.
+      replace : 클라이언트 폴더에 INI 파일이 필요 없이 여러 GRF 파일을 사용할 수 있도록 합니다. 대신 패치 입력으로 INI 파일을 지정하여 이름을 내장할 수 있습니다.
+
+  # ENV
+    - find : ENVIRONMENT CUSTOMIZATION
+      replace : 환경 사용자 지정
+
+    - find : Disable filename check
+      replace : 파일 이름 확인 비활성화
+
+    - find : Disables the check that forces the client to quit if not called an official name like ragexe.exe for all Langtypes.
+      replace : 클라이언트가 ragexe.exe 같은 공식 이름이 아닐 경우 종료되는 확인을 비활성화 (모든 Langtypes에 적용)
+
+    - find : HKLM To HKCU
+      replace : HKLM에서 HKCU로 변경
+
+    - find : This makes the client use HK_CURRENT_USER registry entries instead of HK_LOCAL_MACHINE. Necessary for users who have no admin privileges on their computer.
+      replace : 클라이언트가 HK_LOCAL_MACHINE 대신 HK_CURRENT_USER 레지스트리 항목을 사용하도록 변경. 관리자 권한이 없는 사용자에게 필요
+
+    - find : Use default browser for &lt;URL&gt;
+      replace : &lt;URL&gt;에 기본 브라우저 사용
+
+    - find : Use default web browser to open &lt;URL&gt; instead of built-in ROWebBrowser.
+      replace : 내장 ROWebBrowser 대신 기본 웹 브라우저로 &lt;URL&gt; 열기
+
+    - find : Remove admin privilege requirement
+      replace : 관리자 권한 요구 제거
+
+    - find : Removes the explicit requirement for user access elevation (i.e. Admin privileges) from the client
+      replace : 클라이언트에서 사용자 권한 상승(관리자 권한) 요구를 제거
+
+    - find : Always load client plugins [Experimental]
+      replace : 항상 클라이언트 플러그인 로드 [실험적]
+
+    - find : Makes the client load client plug-ins regardless of its sound settings.
+      replace : 클라이언트가 사운드 설정과 관계없이 플러그인을 로드하도록 함
+
+    - find : Disable multiple windows
+      replace : 다중 창 비활성화
+
+    - find : Prevents the client from creating more than one Client Window on all Langtypes.
+      replace : 클라이언트가 모든 Langtypes에서 하나 이상의 창을 생성하지 못하도록 함
+
+    - find : Customize minimum screen resolution
+      replace : 최소 화면 해상도 사용자 지정
+
+    - find : Change minimum client resolution (width & height) to user specified values from (default of 1024x768).
+      replace : 기본값(1024x768) 대신 사용자가 지정한 최소 해상도(가로/세로)로 변경
+
+    - find : Ignore Debugger
+      replace : 디버거 무시
+
+    - find : Skips checking for a debugger using the 'IsDebuggerPresent' function. Not advisable for use on final clients.
+      replace : <b>'IsDebuggerPresent'</b> 함수를 사용한 디버거 확인을 건너뜀. 최종 클라이언트에서는 권장하지 않음
+
+    - find : WINDOW FRAME CUSTOMIZATION
+      replace : 창 프레임 사용자 지정
+
+    - find : Enable title buttons
+      replace : 제목 표시줄 버튼 활성화
+
+    - find : Enable Title Bar Menu (Reduce, Maximize, Close) buttons and the window icon.
+      replace : 제목 표시줄 메뉴(최소화, 최대화, 닫기) 버튼과 창 아이콘 활성화
+
+    - find : Use Miniature title bar
+      replace : 작은 제목 표시줄 사용
+
+    - find : Makes the client window use a small title bar.
+      replace : 클라이언트 창이 작은 제목 표시줄을 사용하도록 함
+
+    - find : Customize Window title
+      replace : 창 제목 사용자 지정
+
+    - find : Changes the window title to user specified string.
+      replace : 창 제목을 사용자가 지정한 문자열로 변경
+
+    - find : Enable Borderless full screen
+      replace : 테두리 없는 전체 화면 활성화
+
+    - find : Removes borders from the client window when the resolution is set to the screen resolution (commonly known as Borderless Full screen window).
+      replace : 해상도가 화면 해상도와 동일할 때 창 테두리를 제거 (테두리 없는 전체 화면 모드)
+
+    - find : CLIENT ARGUMENTS
+      replace : 클라이언트 인자
+
+    - find : Disable '1*1' arguments
+      replace : <b>'1*1'</b> 인자 비활성화
+
+    - find : Disable all 1*1 arguments such as 1rag1, 1sak1 etc. in order to launch the client directly without launching the patcher.
+      replace : 1rag1, 1sak1 등 모든 '1*1' 인자를 비활성화하여 패처 없이 클라이언트를 직접 실행
+
+    - find : Ignore '/account:' argument
+      replace : <b>'/account:'</b> 인자 무시
+
+    - find : Makes the client ignore <b>/account:</b> command line argument to prevent custom clientinfo.xml from being used.
+      replace : 클라이언트가 <b>/account:</b> 명령줄 인자를 무시하여 사용자 지정 clientinfo.xml 사용 방지
+
+    - find : ENABLE ICON
+      replace : 아이콘 활성화
+
+    - find : Restore Inbuilt App icon
+      replace : 내장 앱 아이콘 복원
+
+    - find : Makes the client use the inbuilt icon instead of the generic Win32 app icon.
+      replace : 클라이언트가 일반 Win32 앱 아이콘 대신 내장 아이콘을 사용하도록 함
+
+    - find : Customize App icon
+      replace : 앱 아이콘 사용자 지정
+
+    - find : Makes the client use the User specified icon (any size and bit depth). For Win7 & higher suggested spec is <b><font color='deepskyblue'>256x256 32bit along with a 16x16 one</b><font>.<br><br>For older clients, you would need to select images from the icon since there is a limit of 3.
+      replace : 클라이언트가 사용자가 지정한 아이콘(크기와 비트 깊이 무관)을 사용하도록 함. Win7 이상에서는 <b><font color='deepskyblue'>256x256 32비트와 16x16</b><font> 아이콘을 함께 사용하는 것이 권장됨.<br><br>구형 클라이언트는 아이콘 선택에 제한(최대 3개)이 있음
+
+    - find : PRIORITY ALTERATION
+      replace : 우선순위 변경
+
+    - find : Change Priority (Idle to Normal)
+      replace : 우선순위 변경 (유휴 → 보통)
+
+    - find : Change the thread priority of inactive window to normal.
+      replace : 비활성 창의 스레드 우선순위를 보통으로 변경
+
+    - find : Change Priority (Normal to High)
+      replace : 우선순위 변경 (보통 → 높음)
+
+    - find : Change the thread priority for active client to high.
+      replace : 활성 클라이언트의 스레드 우선순위를 높음으로 변경
+
+  # NETWORK
+    - find : NETWORK CUSTOMIZATION
+      replace : 네트워크 사용자 지정
+
+    - find : Enable DNS support
+      replace : DNS 지원 활성화
+
+    - find : Enable DNS support for URL specified in <b>clientinfo.xml</b>.
+      replace : <b>clientinfo.xml</b>에 지정된 URL에 대한 DNS 지원을 활성화
+
+    - find : Send MD5 hash packet
+      replace : MD5 해시 패킷 보내기
+
+    - find : Makes the client send a packet with it's MD5 hash for all LangTypes. Only use if you have enabled it in your server.
+      replace : 클라이언트가 모든 LangTypes에 대해 MD5 해시 패킷을 보내도록 합니다. 서버에서 활성화한 경우에만 사용하세요.
+
+    - find : Disable nagle algorithm
+      replace : Nagle 알고리즘 비활성화
+
+    - find : Disables the Nagle Algorithm which queues packets before they are sent in order to minimize protocol overhead. Disabling the algorithm will slightly increase network traffic, but it will decrease latency as well.
+      replace : Nagle 알고리즘을 비활성화하여 네트워크 트래픽은 약간 증가하지만 지연 시간은 줄어듭니다.
+
+    - find : Disable OTP login packet
+      replace : OTP 로그인 패킷 비활성화
+
+    - find : Disable OTP Login Packet, which causes connection issue after disconnect.
+      replace : 연결 해제 후 발생하는 연결 문제를 일으키는 OTP 로그인 패킷을 비활성화
+
+    - find : Enable proxy support
+      replace : 프록시 지원 활성화
+
+    - find : Ignores server-provided IP addresses when changing servers.
+      replace : 서버 변경 시 서버에서 제공한 IP 주소 무시
+
+    - find : Remove hardcoded HTTP IP
+      replace : 하드코딩된 HTTP IP 제거
+
+    - find : Remove hardcoded HTTP service ip address to prevent client from sending HTTP request to official server.
+      replace : 클라이언트가 공식 서버로 HTTP 요청을 보내지 않도록 하드코딩된 HTTP 서비스 IP 제거
+
+    - find : Remove hardcoded address/port
+      replace : 하드코딩된 주소/포트 제거
+
+    - find : Remove hardcoded connection addresses and ports.
+      replace : 하드코딩된 연결 주소와 포트 제거
+
+    - find : Fix HTTP emblem in client
+      replace : 클라이언트의 HTTP 엠블럼 수정
+
+    - find : Fix HTTP Emblem on clients with cheat defender (HTTP service is required).
+      replace : Cheat Defender가 있는 클라이언트의 HTTP 엠블럼 수정 (HTTP 서비스 필요)
+
+    - find : Disable kRO site launch
+      replace : kRO 사이트 실행 비활성화
+
+    - find : Disable <b>ro.gnjoy.com</b> and other similar sites launching after in-game settings change.
+      replace : <b>ro.gnjoy.com</b> 및 유사 사이트가 게임 설정 변경 후 실행되지 않도록 비활성화
+
+    - find : Customize Merchant store URLs
+      replace : 상점 URL 사용자 지정
+
+    - find : Change the hardcoded URL used for MerchantStore save and load (HTTP service required).
+      replace : MerchantStore 저장/불러오기 시 사용되는 하드코딩된 URL 변경 (HTTP 서비스 필요)
+
+    - find : Send client flags
+      replace : 클라이언트 플래그 보내기
+
+    - find : Update the version to send the clients flag to server. Helps to avoid flag incongruency between client & server.
+      replace : 클라이언트 플래그를 서버로 보내도록 버전을 업데이트하여 불일치를 방지
+
+    - find : Hide packets from PEEK & BPE
+      replace : PEEK 및 BPE에서 패킷 숨기기
+
+    - find : Disable PEEK & BPE tools from discovering the essentials needed to track/extract packets.
+      replace : PEEK 및 BPE 도구가 패킷 추적/추출에 필요한 요소를 찾지 못하도록 비활성화
+
+    - find : ENCRYPTION KEY CUSTOMIZATION
+      replace : 암호화 키 사용자 지정
+
+    - find : Customize Packet Key (1st)
+      replace : 패킷 키 사용자 지정 (첫 번째)
+
+    - find : Change the 1st key used for packet encryption. Dont select the patch Disable Packet Encryption if you are using this. Don't use it if you don't know what you are doing.
+      replace : 첫 번째 패킷 암호화 키 변경. 패킷 암호화 비활성화 패치를 함께 사용하지 마세요. 잘 모른다면 사용하지 마세요.
+
+    - find : Customize Packet Key (2nd)
+      replace : 패킷 키 사용자 지정 (두 번째)
+
+    - find : Change the 2nd key used for packet encryption. Dont select the patch Disable Packet Encryption if you are using this. Don't use it if you don't know what you are doing.
+      replace : 두 번째 패킷 암호화 키 변경. 패킷 암호화 비활성화 패치를 함께 사용하지 마세요. 잘 모른다면 사용하지 마세요.
+
+    - find : Customize Packet Key (3rd)
+      replace : 패킷 키 사용자 지정 (세 번째)
+
+    - find : Change the 3rd key used for packet encryption. Dont select the patch Disable Packet Encryption if you are using this. Don't use it if you don't know what you are doing.
+      replace : 세 번째 패킷 암호화 키 변경. 패킷 암호화 비활성화 패치를 함께 사용하지 마세요. 잘 모른다면 사용하지 마세요.
+
+    - find : DISABLE ENCRYPTION
+      replace : 암호화 비활성화
+
+    - find : Disable Login password encryption
+      replace : 로그인 비밀번호 암호화 비활성화
+
+    - find : Disable encryption in Login Packet 0x2b0 for old clients.
+      replace : 구형 클라이언트의 로그인 패킷 0x2b0 암호화 비활성화
+
+    - find : Disable Map packet encryption
+      replace : 맵 패킷 암호화 비활성화
+
+    - find : Disable usage of Packet encryption for sending packets to map server.<br> Patch is also known as Skip Packet Obfuscation.
+      replace : 맵 서버로 패킷을 보낼 때 암호화 사용 비활성화.<br> 패킷 난독화 건너뛰기라고도 함
+
+    - find : Disable Login/Char packet encryption
+      replace : 로그인/캐릭터 패킷 암호화 비활성화
+
+    - find : Disable usage of Packet encryption for sending packets to login & char server.
+      replace : 로그인 및 캐릭터 서버로 패킷을 보낼 때 암호화 사용 비활성화
+
+    - find : Disable Login password encryption
+      replace : 로그인 비밀번호 암호화 비활성화
+
+    - find : Disable encryption of password in login packet 0x64 for langtypes 4 & 7.
+      replace : langtypes 4 및 7에서 로그인 패킷 0x64의 비밀번호 암호화 비활성화
